@@ -1,7 +1,9 @@
 #+TITLE: COE 202 notes - Airbus5717
 #+OPTIONS: num:nil html-style:nil
 #+AUTHOR: Airbus5717
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+LaTeX_HEADER: \usepackage{minted}
+
 
 
 -----
@@ -25,12 +27,32 @@
 
 -----
 * unit 1 Data representation
-*** resources (Mudawar)
+*** resources
+**** Mudawar
 - [[./res/01-DigitalSystems.pdf]]
 - [[./res/02-BinaryArithmetic.pdf]]
-*** resources (el-maleh)
+
+**** el-maleh
 - [[./res/01-Data-el-maleh.pdf]]
-*** resources (suwaiyan)
+
+**** suwaiyan
 - [[./res/01-NumberSystems-su.pdf]]
 
 ** Introduction
+- computers represent data in binary numbers (1 and 0)
+- all data must be represented in binary format
+- data could be numbers, alphanumeric characters, images, sounds and many more.
+- in general they are (numbers and characters)
+
+** Numbering Systems
+- Numbering systems are characterized by their base number (also called radix or r for short)
+- a number with base n will have digits from 0 to (n-1)
+- for example base 2 includes : 0 and 1
+- the widely used numbering systems are:
+   | Numbering system | Base | digits set         |
+   |------------------+------+--------------------|
+   | Binary           |    2 | 0, 1               |
+   | Octal            |    8 | 0, ..., 7          |
+   | Decimal          |   10 | 0, 1, ..., 9       |
+   | Hexadecimal      |   16 | 0, ... 9, A, ... F |
+-----
