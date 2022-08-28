@@ -22,6 +22,25 @@
 * Videos
 ** Dr. Ali Al-Suwaiyan
 + YouTube playlist: https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ
+
+| UNIT                                         | YT video lecture         |
+|----------------------------------------------+--------------------------|
+| 1. Numbering systems                         | 1-5                      |
+| 2. Boolean algebra                           | 6-8                      |
+| 3. Std and canonical forms                   | 9-10                     |
+| 4. Verilog(1/3)                              | 11, 11.5                 |
+| 5. K-Map simplification                      | 12-15(till min 24)       |
+| 6. Other gate types                          | (contine)15-17           |
+| 7. Combination Logic Design Procedure        | 18 (till min 24)         |
+| 8. Arithmetic Circuits                       | (continue) 18-23         |
+| 9. Functional blocks                         | 24-28                    |
+| 10. Verilog(2/3)                             | 29.1, 29.2, homework 1-2 |
+| 11. Analysis & Design of Sequential Circuits | 30-34                    |
+| 12. Registers and counters                   | 35-38(till min 20)       |
+| 13. Verilog(3/3)                             | (contine)38-39           |
+| 14. review                                   | 40                       |
+-----
+
 ** Dr. M. Mudawar
 + YouTube playlist: https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m
 
@@ -31,12 +50,15 @@
 **** Mudawar
 - [[./res/01-DigitalSystems.pdf]]
 - [[./res/02-BinaryArithmetic.pdf]]
-
-**** el-maleh
-- [[./res/01-Data-el-maleh.pdf]]
+- [[https://youtu.be/Ula_T_wYMOU][1.1 Introduction to Digital Circuits(Video)]]
 
 **** suwaiyan
 - [[./res/01-NumberSystems-su.pdf]]
+- [[https://www.youtube.com/watch?v=TjVBJxnch9g&list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m&index=1][Number Systems Video(from lecture 1 to lecture 5)]]
+
+
+**** el-maleh
+- [[./res/01-Data-el-maleh.pdf]]
 
 ** Introduction
 - computers represent data in binary numbers (1 and 0)
