@@ -8,6 +8,7 @@
 
 -----
 #+begin_quote
+- Mobile screens may not display some stuff properly
 - These notes are not enough for A+
 
 - These notes are according to Dr. Al-Suwaiyan's order of sections
@@ -75,4 +76,11 @@
    | Octal            |    8 | 0, ..., 7          |
    | Decimal          |   10 | 0, 1, ..., 9       |
    | Hexadecimal      |   16 | 0, ... 9, A, ... F |
------
+
+** Weighted Number Systems
+ - a number =D= consists of =n= digits with each digit having a particular position.
+ - Every Digit has a fixed weight
+
+ [[./res/unit1-wns.png]] (from el-maleh slides)
+
+ - for example in base 10: =10 = 1 * 10 + 0 * 10=
