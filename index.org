@@ -50,11 +50,9 @@
 **** Mudawar
 - [[./res/01-DigitalSystems.pdf]]
 - [[./res/02-BinaryArithmetic.pdf]]
-- [[https://youtu.be/Ula_T_wYMOU][1.1 Introduction to Digital Circuits(Video)]]
 
 **** suwaiyan
 - [[./res/01-NumberSystems-su.pdf]]
-- [[https://www.youtube.com/watch?v=TjVBJxnch9g&list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m&index=1][Number Systems Video(from lecture 1 to lecture 5)]]
 
 
 **** el-maleh
