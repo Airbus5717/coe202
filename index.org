@@ -1,6 +1,36 @@
-#+TITLE: COE 202 notes
+#+TITLE: COE 202 notes - Airbus5717
 #+OPTIONS: num:nil html-style:nil
 #+AUTHOR: Airbus5717
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 
-* Basics of numbering System
+
+-----
+#+begin_quote
+- These notes are not enough for A+
+
+- These notes are according to Dr. Al-Suwaiyan's order of sections
+
+- notes are on https://github.com/airbus5717/coe202
+
+- made by emacs's orgmode
+
+#+end_quote
+-----
+
+* Videos
+** Dr. Ali Al-Suwaiyan
++ YouTube playlist: https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ
+** Dr. M. Mudawar
++ YouTube playlist: https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m
+
+-----
+* unit 1 Data representation
+*** resources (Mudawar)
+- [[./res/01-DigitalSystems.pdf]]
+- [[./res/02-BinaryArithmetic.pdf]]
+*** resources (el-maleh)
+- [[./res/01-Data-el-maleh.pdf]]
+*** resources (suwaiyan)
+- [[./res/01-NumberSystems-su.pdf]]
+
+** Introduction
