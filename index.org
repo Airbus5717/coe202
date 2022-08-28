@@ -1,0 +1,6 @@
+#+TITLE: COE 202 notes
+#+OPTIONS: num:nil html-style:nil
+#+AUTHOR: Airbus5717
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
+
+* Basics of numbering System
