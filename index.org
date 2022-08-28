@@ -65,6 +65,7 @@
 - data could be numbers, alphanumeric characters, images, sounds and many more.
 - in general they are (numbers and characters)
 
+-----
 ** Numbering Systems
 - Numbering systems are characterized by their base number (also called radix or r for short)
 - a number with base n will have digits from 0 to (n-1)
@@ -77,6 +78,7 @@
    | Decimal          |   10 | 0, 1, ..., 9       |
    | Hexadecimal      |   16 | 0, ... 9, A, ... F |
 
+-----
 ** Weighted Number Systems
  - a number =D= consists of =n= digits with each digit having a particular position.
  - Every Digit has a fixed weight
@@ -84,3 +86,13 @@
  [[./res/unit1-wns.png]] (from el-maleh slides)
 
  - for example in base 10: =10 = 1 * 10 + 0 * 10=
+-----
+** The Radix (=Base=)
+the allowed set of digits are from =0= to =r-1=
+for example in base 8: =0...7=
+- revise the slides (for more info)
+-----
+*** Digit weight
+example a number in base 8: =34556=
+- the most significant digit (MSD) is : =3=
+- the least significant digit (LSD) is : =6=

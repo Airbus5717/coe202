@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-08-28 Sun 22:35 -->
+<!-- 2022-08-28 Sun 22:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>COE 202 notes - Airbus5717</title>
@@ -23,22 +23,27 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5ab91a1">Videos</a>
+<li><a href="#orgc9001c3">Videos</a>
 <ul>
-<li><a href="#org62bd520">Dr. Ali Al-Suwaiyan</a></li>
-<li><a href="#orgba8545c">Dr. M. Mudawar</a></li>
+<li><a href="#org59be598">Dr. Ali Al-Suwaiyan</a></li>
+<li><a href="#org4fdda87">Dr. M. Mudawar</a></li>
 </ul>
 </li>
-<li><a href="#orge61ed32">unit 1 Data representation</a>
+<li><a href="#org5f37c30">unit 1 Data representation</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org8ef63b1">resources</a></li>
+<li><a href="#org488b690">resources</a></li>
 </ul>
 </li>
-<li><a href="#org0c648ce">Introduction</a></li>
-<li><a href="#org9f86f5e">Numbering Systems</a></li>
-<li><a href="#orgf0e7059">Weighted Number Systems</a></li>
+<li><a href="#orgd18249b">Introduction</a></li>
+<li><a href="#orgce21926">Numbering Systems</a></li>
+<li><a href="#org0da8c2f">Weighted Number Systems</a></li>
+<li><a href="#org2214c1e">The Radix (<code>Base</code>)</a>
+<ul>
+<li><a href="#orgbb95853">Digit weight</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -59,13 +64,13 @@
 </blockquote>
 <hr />
 
-<div id="outline-container-org5ab91a1" class="outline-2">
-<h2 id="org5ab91a1">Videos</h2>
-<div class="outline-text-2" id="text-org5ab91a1">
+<div id="outline-container-orgc9001c3" class="outline-2">
+<h2 id="orgc9001c3">Videos</h2>
+<div class="outline-text-2" id="text-orgc9001c3">
 </div>
-<div id="outline-container-org62bd520" class="outline-3">
-<h3 id="org62bd520">Dr. Ali Al-Suwaiyan</h3>
-<div class="outline-text-3" id="text-org62bd520">
+<div id="outline-container-org59be598" class="outline-3">
+<h3 id="org59be598">Dr. Ali Al-Suwaiyan</h3>
+<div class="outline-text-3" id="text-org59be598">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ">https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ</a></li>
 </ul>
@@ -160,9 +165,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgba8545c" class="outline-3">
-<h3 id="orgba8545c">Dr. M. Mudawar</h3>
-<div class="outline-text-3" id="text-orgba8545c">
+<div id="outline-container-org4fdda87" class="outline-3">
+<h3 id="org4fdda87">Dr. M. Mudawar</h3>
+<div class="outline-text-3" id="text-org4fdda87">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m</a></li>
 </ul>
@@ -171,17 +176,17 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orge61ed32" class="outline-2">
-<h2 id="orge61ed32">unit 1 Data representation</h2>
-<div class="outline-text-2" id="text-orge61ed32">
+<div id="outline-container-org5f37c30" class="outline-2">
+<h2 id="org5f37c30">unit 1 Data representation</h2>
+<div class="outline-text-2" id="text-org5f37c30">
 </div>
-<div id="outline-container-org8ef63b1" class="outline-4">
-<h4 id="org8ef63b1">resources</h4>
-<div class="outline-text-4" id="text-org8ef63b1">
+<div id="outline-container-org488b690" class="outline-4">
+<h4 id="org488b690">resources</h4>
+<div class="outline-text-4" id="text-org488b690">
 </div>
 <ul class="org-ul">
-<li><a id="org60235f2"></a>Mudawar<br />
-<div class="outline-text-5" id="text-org60235f2">
+<li><a id="org7609a70"></a>Mudawar<br />
+<div class="outline-text-5" id="text-org7609a70">
 <ul class="org-ul">
 <li><a href="./res/01-DigitalSystems.pdf">./res/01-DigitalSystems.pdf</a></li>
 <li><a href="./res/02-BinaryArithmetic.pdf">./res/02-BinaryArithmetic.pdf</a></li>
@@ -189,8 +194,8 @@
 </div>
 </li>
 
-<li><a id="org5c6abb1"></a>suwaiyan<br />
-<div class="outline-text-5" id="text-org5c6abb1">
+<li><a id="org6a413e1"></a>suwaiyan<br />
+<div class="outline-text-5" id="text-org6a413e1">
 <ul class="org-ul">
 <li><a href="./res/01-NumberSystems-su.pdf">./res/01-NumberSystems-su.pdf</a></li>
 </ul>
@@ -198,8 +203,8 @@
 </li>
 
 
-<li><a id="orgb0087b1"></a>el-maleh<br />
-<div class="outline-text-5" id="text-orgb0087b1">
+<li><a id="org52e957c"></a>el-maleh<br />
+<div class="outline-text-5" id="text-org52e957c">
 <ul class="org-ul">
 <li><a href="./res/01-Data-el-maleh.pdf">./res/01-Data-el-maleh.pdf</a></li>
 </ul>
@@ -208,21 +213,22 @@
 </ul>
 </div>
 
-<div id="outline-container-org0c648ce" class="outline-3">
-<h3 id="org0c648ce">Introduction</h3>
-<div class="outline-text-3" id="text-org0c648ce">
+<div id="outline-container-orgd18249b" class="outline-3">
+<h3 id="orgd18249b">Introduction</h3>
+<div class="outline-text-3" id="text-orgd18249b">
 <ul class="org-ul">
 <li>computers represent data in binary numbers (1 and 0)</li>
 <li>all data must be represented in binary format</li>
 <li>data could be numbers, alphanumeric characters, images, sounds and many more.</li>
 <li>in general they are (numbers and characters)</li>
 </ul>
-</div>
-</div>
 
-<div id="outline-container-org9f86f5e" class="outline-3">
-<h3 id="org9f86f5e">Numbering Systems</h3>
-<div class="outline-text-3" id="text-org9f86f5e">
+<hr />
+</div>
+</div>
+<div id="outline-container-orgce21926" class="outline-3">
+<h3 id="orgce21926">Numbering Systems</h3>
+<div class="outline-text-3" id="text-orgce21926">
 <ul class="org-ul">
 <li>Numbering systems are characterized by their base number (also called radix or r for short)</li>
 <li>a number with base n will have digits from 0 to (n-1)</li>
@@ -274,12 +280,13 @@ the widely used numbering systems are:
 </tbody>
 </table></li>
 </ul>
-</div>
-</div>
 
-<div id="outline-container-orgf0e7059" class="outline-3">
-<h3 id="orgf0e7059">Weighted Number Systems</h3>
-<div class="outline-text-3" id="text-orgf0e7059">
+<hr />
+</div>
+</div>
+<div id="outline-container-org0da8c2f" class="outline-3">
+<h3 id="org0da8c2f">Weighted Number Systems</h3>
+<div class="outline-text-3" id="text-org0da8c2f">
 <ul class="org-ul">
 <li>a number <code>D</code> consists of <code>n</code> digits with each digit having a particular position.</li>
 <li>Every Digit has a fixed weight</li>
@@ -292,13 +299,39 @@ the widely used numbering systems are:
 <ul class="org-ul">
 <li>for example in base 10: <code>10 = 1 * 10 + 0 * 10</code></li>
 </ul>
+<hr />
+</div>
+</div>
+<div id="outline-container-org2214c1e" class="outline-3">
+<h3 id="org2214c1e">The Radix (<code>Base</code>)</h3>
+<div class="outline-text-3" id="text-org2214c1e">
+<p>
+the allowed set of digits are from <code>0</code> to <code>r-1</code>
+for example in base 8: <code>0...7</code>
+</p>
+<ul class="org-ul">
+<li>revise the slides (for more info)</li>
+</ul>
+<hr />
+</div>
+<div id="outline-container-orgbb95853" class="outline-4">
+<h4 id="orgbb95853">Digit weight</h4>
+<div class="outline-text-4" id="text-orgbb95853">
+<p>
+example a number in base 8: <code>34556</code>
+</p>
+<ul class="org-ul">
+<li>the most significant digit (MSD) is : <code>3</code></li>
+<li>the least significant digit (LSD) is : <code>6</code></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Airbus5717</p>
-<p class="date">Created: 2022-08-28 Sun 22:35</p>
+<p class="date">Created: 2022-08-28 Sun 22:50</p>
 </div>
 </body>
 </html>
