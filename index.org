@@ -21,10 +21,16 @@
 -----
 
 * Videos
+** Dr. M. Mudawar
++ YouTube playlist: https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m
+
+** Dr. Aiman El-Maleh
++ Microsoft stream videos: https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6
+
 ** Dr. Ali Al-Suwaiyan
 + YouTube playlist: https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ
 
-| UNIT                                         | YT video lecture         |
+| UNIT (For Suwaiyan)                          | YT video lecture         |
 |----------------------------------------------+--------------------------|
 | 1. Numbering systems                         | 1-5                      |
 | 2. Boolean algebra                           | 6-8                      |
@@ -42,8 +48,7 @@
 | 14. review                                   | 40                       |
 -----
 
-** Dr. M. Mudawar
-+ YouTube playlist: https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m
+
 
 -----
 * unit 1 Data representation
@@ -90,9 +95,66 @@
 ** The Radix (=Base=)
 the allowed set of digits are from =0= to =r-1=
 for example in base 8: =0...7=
-- revise the slides (for more info)
+- revise the (El-Maleh's) slides (7-12)
 -----
 *** Digit weight
 example a number in base 8: =34556=
 - the most significant digit (MSD) is : =3=
 - the least significant digit (LSD) is : =6=
+-----
+** Binary System
+- the r = =2=
+- each digit is either 1 or 0
+- each bit represents a power of 2
+ |  2^n | Decimal value |
+ |------+---------------|
+ |  2^0 |             1 |
+ |  2^1 |             2 |
+ |  2^2 |             4 |
+ |  2^3 |             8 |
+ |  2^4 |            16 |
+ |  2^5 |            32 |
+ |  2^6 |            64 |
+ |  2^7 |           128 |
+ |  2^8 |           256 |
+ |  2^9 |           512 |
+ | 2^10 |          1024 |
+- example of conversion from binary to decimal
+  binary number (101)
+  = 1 * 2^2 + 0 * 2^1 + 1 * 2^0
+  = 5 in decimal
+- see a YouTube video on conversion from decimal to binary [[https://www.youtube.com/watch?v=rsxT4FfRBaM][here]]
+- another one on from binary to decimal [[https://www.youtube.com/watch?v=VLflTjd3lWA][here]]
+
+** Octal System
+- r = 8
+- Octal digits = {0, 1, 2, 3, 4, 5, 6, 7}
+- conversion videos [[https://www.youtube.com/watch?v=YCM2JReWS10][octal 2 decimal]] and [[https://www.youtube.com/watch?v=ayul1fmZd0Y][decimal 2 octal]]
+
+** Hexadecimal System
+- r = 16
+- Digits are 0..9 then A, B, C, D, E, F
+- F is equavilant to 15 in decimal
+- conversion videos [[https://www.youtube.com/watch?v=QJW6qnfhC70][deci 2 hex]] and [[https://www.youtube.com/watch?v=pg-HEGBpCQk][hex 2 deci]]
+  also [[https://www.youtube.com/watch?v=D_YC6DSPpQE][hex 2 binary]] and [[https://www.youtube.com/watch?v=tSLKOKGQq0Y][binary 2 hex]].
+-----
+** Integers in (Binary, Octal, Decimal and Hexadecimal)
+| Binary(2) | Octal(8) | Decimal(10) | Hexadecimal(16) |
+|-----------+----------+-------------+-----------------|
+|      0000 |        0 |           0 |               0 |
+|      0001 |        1 |           1 |               1 |
+|      0010 |        2 |           2 |               2 |
+|      0011 |        3 |           3 |               3 |
+|      0100 |        4 |           4 |               4 |
+|      0101 |        5 |           5 |               5 |
+|      0110 |        6 |           6 |               6 |
+|      0111 |        7 |           7 |               7 |
+|      1000 |       10 |           8 |               8 |
+|      1001 |       11 |           9 |               9 |
+|      1010 |       12 |          10 |               A |
+|      1011 |       13 |          11 |               B |
+|      1100 |       14 |          12 |               C |
+|      1101 |       15 |          13 |               D |
+|      1110 |       16 |          14 |               E |
+|      1111 |       17 |          15 |               F |
+-----

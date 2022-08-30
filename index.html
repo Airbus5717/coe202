@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-08-28 Sun 22:50 -->
+<!-- 2022-08-30 Tue 22:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>COE 202 notes - Airbus5717</title>
@@ -23,27 +23,32 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc9001c3">Videos</a>
+<li><a href="#orgdeca5b8">Videos</a>
 <ul>
-<li><a href="#org59be598">Dr. Ali Al-Suwaiyan</a></li>
-<li><a href="#org4fdda87">Dr. M. Mudawar</a></li>
+<li><a href="#org1df2d07">Dr. M. Mudawar</a></li>
+<li><a href="#orgf719456">Dr. Aiman El-Maleh</a></li>
+<li><a href="#org582fdb0">Dr. Ali Al-Suwaiyan</a></li>
 </ul>
 </li>
-<li><a href="#org5f37c30">unit 1 Data representation</a>
+<li><a href="#orgf8592b4">unit 1 Data representation</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org488b690">resources</a></li>
+<li><a href="#org517a3d4">resources</a></li>
 </ul>
 </li>
-<li><a href="#orgd18249b">Introduction</a></li>
-<li><a href="#orgce21926">Numbering Systems</a></li>
-<li><a href="#org0da8c2f">Weighted Number Systems</a></li>
-<li><a href="#org2214c1e">The Radix (<code>Base</code>)</a>
+<li><a href="#orgc794407">Introduction</a></li>
+<li><a href="#orgc84d0b2">Numbering Systems</a></li>
+<li><a href="#org4280d79">Weighted Number Systems</a></li>
+<li><a href="#orga5e768d">The Radix (<code>Base</code>)</a>
 <ul>
-<li><a href="#orgbb95853">Digit weight</a></li>
+<li><a href="#org4de0219">Digit weight</a></li>
 </ul>
 </li>
+<li><a href="#org8769dbb">Binary System</a></li>
+<li><a href="#orga363c63">Octal System</a></li>
+<li><a href="#orgc832bc6">Hexadecimal System</a></li>
+<li><a href="#orgf826f59">Integers in (Binary, Octal, Decimal and Hexadecimal)</a></li>
 </ul>
 </li>
 </ul>
@@ -64,13 +69,31 @@
 </blockquote>
 <hr />
 
-<div id="outline-container-orgc9001c3" class="outline-2">
-<h2 id="orgc9001c3">Videos</h2>
-<div class="outline-text-2" id="text-orgc9001c3">
+<div id="outline-container-orgdeca5b8" class="outline-2">
+<h2 id="orgdeca5b8">Videos</h2>
+<div class="outline-text-2" id="text-orgdeca5b8">
 </div>
-<div id="outline-container-org59be598" class="outline-3">
-<h3 id="org59be598">Dr. Ali Al-Suwaiyan</h3>
-<div class="outline-text-3" id="text-org59be598">
+<div id="outline-container-org1df2d07" class="outline-3">
+<h3 id="org1df2d07">Dr. M. Mudawar</h3>
+<div class="outline-text-3" id="text-org1df2d07">
+<ul class="org-ul">
+<li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf719456" class="outline-3">
+<h3 id="orgf719456">Dr. Aiman El-Maleh</h3>
+<div class="outline-text-3" id="text-orgf719456">
+<ul class="org-ul">
+<li>Microsoft stream videos: <a href="https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6">https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org582fdb0" class="outline-3">
+<h3 id="org582fdb0">Dr. Ali Al-Suwaiyan</h3>
+<div class="outline-text-3" id="text-org582fdb0">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ">https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ</a></li>
 </ul>
@@ -85,7 +108,7 @@
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">UNIT</th>
+<th scope="col" class="org-left">UNIT (For Suwaiyan)</th>
 <th scope="col" class="org-left">YT video lecture</th>
 </tr>
 </thead>
@@ -162,31 +185,24 @@
 </tbody>
 </table>
 <hr />
-</div>
-</div>
 
-<div id="outline-container-org4fdda87" class="outline-3">
-<h3 id="org4fdda87">Dr. M. Mudawar</h3>
-<div class="outline-text-3" id="text-org4fdda87">
-<ul class="org-ul">
-<li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m</a></li>
-</ul>
+
 
 <hr />
 </div>
 </div>
 </div>
-<div id="outline-container-org5f37c30" class="outline-2">
-<h2 id="org5f37c30">unit 1 Data representation</h2>
-<div class="outline-text-2" id="text-org5f37c30">
+<div id="outline-container-orgf8592b4" class="outline-2">
+<h2 id="orgf8592b4">unit 1 Data representation</h2>
+<div class="outline-text-2" id="text-orgf8592b4">
 </div>
-<div id="outline-container-org488b690" class="outline-4">
-<h4 id="org488b690">resources</h4>
-<div class="outline-text-4" id="text-org488b690">
+<div id="outline-container-org517a3d4" class="outline-4">
+<h4 id="org517a3d4">resources</h4>
+<div class="outline-text-4" id="text-org517a3d4">
 </div>
 <ul class="org-ul">
-<li><a id="org7609a70"></a>Mudawar<br />
-<div class="outline-text-5" id="text-org7609a70">
+<li><a id="orgedd8cfb"></a>Mudawar<br />
+<div class="outline-text-5" id="text-orgedd8cfb">
 <ul class="org-ul">
 <li><a href="./res/01-DigitalSystems.pdf">./res/01-DigitalSystems.pdf</a></li>
 <li><a href="./res/02-BinaryArithmetic.pdf">./res/02-BinaryArithmetic.pdf</a></li>
@@ -194,8 +210,8 @@
 </div>
 </li>
 
-<li><a id="org6a413e1"></a>suwaiyan<br />
-<div class="outline-text-5" id="text-org6a413e1">
+<li><a id="org05df176"></a>suwaiyan<br />
+<div class="outline-text-5" id="text-org05df176">
 <ul class="org-ul">
 <li><a href="./res/01-NumberSystems-su.pdf">./res/01-NumberSystems-su.pdf</a></li>
 </ul>
@@ -203,8 +219,8 @@
 </li>
 
 
-<li><a id="org52e957c"></a>el-maleh<br />
-<div class="outline-text-5" id="text-org52e957c">
+<li><a id="org93bade6"></a>el-maleh<br />
+<div class="outline-text-5" id="text-org93bade6">
 <ul class="org-ul">
 <li><a href="./res/01-Data-el-maleh.pdf">./res/01-Data-el-maleh.pdf</a></li>
 </ul>
@@ -213,9 +229,9 @@
 </ul>
 </div>
 
-<div id="outline-container-orgd18249b" class="outline-3">
-<h3 id="orgd18249b">Introduction</h3>
-<div class="outline-text-3" id="text-orgd18249b">
+<div id="outline-container-orgc794407" class="outline-3">
+<h3 id="orgc794407">Introduction</h3>
+<div class="outline-text-3" id="text-orgc794407">
 <ul class="org-ul">
 <li>computers represent data in binary numbers (1 and 0)</li>
 <li>all data must be represented in binary format</li>
@@ -226,9 +242,9 @@
 <hr />
 </div>
 </div>
-<div id="outline-container-orgce21926" class="outline-3">
-<h3 id="orgce21926">Numbering Systems</h3>
-<div class="outline-text-3" id="text-orgce21926">
+<div id="outline-container-orgc84d0b2" class="outline-3">
+<h3 id="orgc84d0b2">Numbering Systems</h3>
+<div class="outline-text-3" id="text-orgc84d0b2">
 <ul class="org-ul">
 <li>Numbering systems are characterized by their base number (also called radix or r for short)</li>
 <li>a number with base n will have digits from 0 to (n-1)</li>
@@ -284,9 +300,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-org0da8c2f" class="outline-3">
-<h3 id="org0da8c2f">Weighted Number Systems</h3>
-<div class="outline-text-3" id="text-org0da8c2f">
+<div id="outline-container-org4280d79" class="outline-3">
+<h3 id="org4280d79">Weighted Number Systems</h3>
+<div class="outline-text-3" id="text-org4280d79">
 <ul class="org-ul">
 <li>a number <code>D</code> consists of <code>n</code> digits with each digit having a particular position.</li>
 <li>Every Digit has a fixed weight</li>
@@ -302,21 +318,21 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-org2214c1e" class="outline-3">
-<h3 id="org2214c1e">The Radix (<code>Base</code>)</h3>
-<div class="outline-text-3" id="text-org2214c1e">
+<div id="outline-container-orga5e768d" class="outline-3">
+<h3 id="orga5e768d">The Radix (<code>Base</code>)</h3>
+<div class="outline-text-3" id="text-orga5e768d">
 <p>
 the allowed set of digits are from <code>0</code> to <code>r-1</code>
 for example in base 8: <code>0...7</code>
 </p>
 <ul class="org-ul">
-<li>revise the slides (for more info)</li>
+<li>revise the (El-Maleh&rsquo;s) slides (7-12)</li>
 </ul>
 <hr />
 </div>
-<div id="outline-container-orgbb95853" class="outline-4">
-<h4 id="orgbb95853">Digit weight</h4>
-<div class="outline-text-4" id="text-orgbb95853">
+<div id="outline-container-org4de0219" class="outline-4">
+<h4 id="org4de0219">Digit weight</h4>
+<div class="outline-text-4" id="text-org4de0219">
 <p>
 example a number in base 8: <code>34556</code>
 </p>
@@ -324,14 +340,269 @@ example a number in base 8: <code>34556</code>
 <li>the most significant digit (MSD) is : <code>3</code></li>
 <li>the least significant digit (LSD) is : <code>6</code></li>
 </ul>
+<hr />
 </div>
+</div>
+</div>
+<div id="outline-container-org8769dbb" class="outline-3">
+<h3 id="org8769dbb">Binary System</h3>
+<div class="outline-text-3" id="text-org8769dbb">
+<ul class="org-ul">
+<li>the r = <code>2</code></li>
+<li>each digit is either 1 or 0</li>
+<li><p>
+each bit represents a power of 2
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">2<sup>n</sup></th>
+<th scope="col" class="org-right">Decimal value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">2<sup>0</sup></td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>1</sup></td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>2</sup></td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>3</sup></td>
+<td class="org-right">8</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>4</sup></td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>5</sup></td>
+<td class="org-right">32</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>6</sup></td>
+<td class="org-right">64</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>7</sup></td>
+<td class="org-right">128</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>8</sup></td>
+<td class="org-right">256</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>9</sup></td>
+<td class="org-right">512</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>10</sup></td>
+<td class="org-right">1024</td>
+</tr>
+</tbody>
+</table></li>
+<li>example of conversion from binary to decimal
+binary number (101)
+= 1 * 2<sup>2</sup> + 0 * 2<sup>1</sup> + 1 * 2<sup>0</sup>
+= 5 in decimal</li>
+<li>see a YouTube video on conversion from decimal to binary <a href="https://www.youtube.com/watch?v=rsxT4FfRBaM">here</a></li>
+<li>another one on from binary to decimal <a href="https://www.youtube.com/watch?v=VLflTjd3lWA">here</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga363c63" class="outline-3">
+<h3 id="orga363c63">Octal System</h3>
+<div class="outline-text-3" id="text-orga363c63">
+<ul class="org-ul">
+<li>r = 8</li>
+<li>Octal digits = {0, 1, 2, 3, 4, 5, 6, 7}</li>
+<li>conversion videos <a href="https://www.youtube.com/watch?v=YCM2JReWS10">octal 2 decimal</a> and <a href="https://www.youtube.com/watch?v=ayul1fmZd0Y">decimal 2 octal</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc832bc6" class="outline-3">
+<h3 id="orgc832bc6">Hexadecimal System</h3>
+<div class="outline-text-3" id="text-orgc832bc6">
+<ul class="org-ul">
+<li>r = 16</li>
+<li>Digits are 0..9 then A, B, C, D, E, F</li>
+<li>F is equavilant to 15 in decimal</li>
+<li>conversion videos <a href="https://www.youtube.com/watch?v=QJW6qnfhC70">deci 2 hex</a> and <a href="https://www.youtube.com/watch?v=pg-HEGBpCQk">hex 2 deci</a>
+also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">hex 2 binary</a> and <a href="https://www.youtube.com/watch?v=tSLKOKGQq0Y">binary 2 hex</a>.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="outline-container-orgf826f59" class="outline-3">
+<h3 id="orgf826f59">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
+<div class="outline-text-3" id="text-orgf826f59">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Binary(2)</th>
+<th scope="col" class="org-right">Octal(8)</th>
+<th scope="col" class="org-right">Decimal(10)</th>
+<th scope="col" class="org-right">Hexadecimal(16)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0000</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0001</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0010</td>
+<td class="org-right">2</td>
+<td class="org-right">2</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-right">0011</td>
+<td class="org-right">3</td>
+<td class="org-right">3</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">0100</td>
+<td class="org-right">4</td>
+<td class="org-right">4</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-right">0101</td>
+<td class="org-right">5</td>
+<td class="org-right">5</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-right">0110</td>
+<td class="org-right">6</td>
+<td class="org-right">6</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-right">0111</td>
+<td class="org-right">7</td>
+<td class="org-right">7</td>
+<td class="org-right">7</td>
+</tr>
+
+<tr>
+<td class="org-right">1000</td>
+<td class="org-right">10</td>
+<td class="org-right">8</td>
+<td class="org-right">8</td>
+</tr>
+
+<tr>
+<td class="org-right">1001</td>
+<td class="org-right">11</td>
+<td class="org-right">9</td>
+<td class="org-right">9</td>
+</tr>
+
+<tr>
+<td class="org-right">1010</td>
+<td class="org-right">12</td>
+<td class="org-right">10</td>
+<td class="org-right">A</td>
+</tr>
+
+<tr>
+<td class="org-right">1011</td>
+<td class="org-right">13</td>
+<td class="org-right">11</td>
+<td class="org-right">B</td>
+</tr>
+
+<tr>
+<td class="org-right">1100</td>
+<td class="org-right">14</td>
+<td class="org-right">12</td>
+<td class="org-right">C</td>
+</tr>
+
+<tr>
+<td class="org-right">1101</td>
+<td class="org-right">15</td>
+<td class="org-right">13</td>
+<td class="org-right">D</td>
+</tr>
+
+<tr>
+<td class="org-right">1110</td>
+<td class="org-right">16</td>
+<td class="org-right">14</td>
+<td class="org-right">E</td>
+</tr>
+
+<tr>
+<td class="org-right">1111</td>
+<td class="org-right">17</td>
+<td class="org-right">15</td>
+<td class="org-right">F</td>
+</tr>
+</tbody>
+</table>
+<hr />
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Airbus5717</p>
-<p class="date">Created: 2022-08-28 Sun 22:50</p>
+<p class="date">Created: 2022-08-30 Tue 22:50</p>
 </div>
 </body>
 </html>
