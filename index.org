@@ -172,7 +172,7 @@ example a number in base 8: =34556=
 check slides for example
 -----
 
-* TODO Binary Logic and Gates
+* Binary Logic and Gates
 *** Suwaiyan slides
 - [[./res/02-BooleanAlgebra.pdf][click here]]
 ** Boolean Algebra
@@ -316,6 +316,7 @@ from page 11 to 16
 
 also practice more
 #+end_verse
+-----
 * TODO Standard & Canonical Forms
 *** Suwaiyan slides
 - [[./res/03-StandardAndCanonicalForms.pdf][click here]]
