@@ -276,7 +276,46 @@ Truth Table for (A XNOR B)
 | 1 | 1 |       1 |
 -----
 
+#+begin_verse
+NOTE: solve a few problems on slides and etc.
+#+end_verse
 
+** Basic Identities and Duality principle
+Identities Table
+
+| Prop.Name      | Expression         | Dual                         |
+|----------------+--------------------+------------------------------|
+| Identity       | X + 0 = X          | X . 1 = X                    |
+| NULL           | X + 1 = 1          | X . 0 = 0                    |
+| Idempotence    | X + X = X          | XX = X                       |
+| Complement     | X + X' = 1         | XX'= 0                       |
+| Commutative    | X+Y = Y+X          | XY = XY                      |
+| Associative    | (X+Y)+Z = X+(Y+Z)  | (XY)Z = X(YZ)                |
+| Distributive   | X(Y+Z) = XY + XZ   | X+YZ = (X+Y)(X+Z)            |
+| Absorption     | X + XY = X         | X(X + Y) = X                 |
+| Minimization   | XY + X'Y = Y       | (X+Y)(X' + Y) = Y            |
+| Simplification | X + X'Y = X+Y      | X(X'+ Y) = XY                |
+| Consensus      | XY+X'Z+YZ = XY+X'Z | (X+Y)(X'+Z)(Y+Z)=(X+Y)(X'+Z) |
+| DeMorgan's     | (X+Y)' = X'Y'      | (XY)' = X' + Y'              |
+
+*** to get a dual
+- Change every =AND= to =OR= (. to +)
+- Change every =OR= to =AND= (+ to .)
+- Complement variables
+  - change 1 to 0
+  - change 0 to 1
+
+#+begin_verse
+Dual can be used to simplify a function but must be dualed back and the simplification
+#+end_verse
+-----
+** Algerbraic Manipulations
+#+begin_verse
+Solve problems in Suwaiyan slides from [BooleanAlgebra slides]
+from page 11 to 16
+
+also practice more
+#+end_verse
 * TODO Standard & Canonical Forms
 *** Suwaiyan slides
 - [[./res/03-StandardAndCanonicalForms.pdf][click here]]
