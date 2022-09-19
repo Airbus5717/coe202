@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-09-19 Mon 14:32 -->
+<!-- 2022-09-19 Mon 14:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>COE 202 notes - Airbus5717</title>
@@ -23,82 +23,11 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge348c76">Videos</a>
-<ul>
-<li><a href="#org6ad2225">Dr. M. Mudawar</a></li>
-<li><a href="#org8df5a9c">Dr. Aiman El-Maleh</a></li>
-<li><a href="#orgbf8778b">Dr. Ali Al-Suwaiyan</a></li>
-</ul>
-</li>
-<li><a href="#orgc538084">Data Representation</a>
-<ul>
-<li>
-<ul>
-<li><a href="#orge0f3774">Suwaiyan slides</a></li>
-</ul>
-</li>
-<li><a href="#org7161b20">Introduction</a></li>
-<li><a href="#orgb874264">Numbering Systems</a></li>
-<li><a href="#orged19313">Weighted Number Systems</a></li>
-<li><a href="#orgd41af70">The Radix (<code>Base</code>)</a>
-<ul>
-<li><a href="#org3fac403">Digit weight</a></li>
-</ul>
-</li>
-<li><a href="#orgdd552c2">Binary System</a></li>
-<li><a href="#org08b2990">Octal System</a></li>
-<li><a href="#orgdefe3e5">Hexadecimal System</a></li>
-<li><a href="#orgca7fc3b">Integers in (Binary, Octal, Decimal and Hexadecimal)</a></li>
-<li><a href="#org828908e">Binary coded decimal</a></li>
-<li><a href="#org02461a7">ASCII Chars</a></li>
-<li><a href="#org1c46f7e">Error detection by parity bit</a>
-<ul>
-<li><a href="#org5814863">Parity Bit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org7a4f3fc">Binary Logic and Gates</a>
-<ul>
-<li>
-<ul>
-<li><a href="#orgfc7f2c7">Suwaiyan slides</a></li>
-</ul>
-</li>
-<li><a href="#org6023b22">Boolean Algebra</a>
-<ul>
-<li><a href="#org04c73ff">Operator precedence</a></li>
-</ul>
-</li>
-<li><a href="#org56ec107">Logic Gates &amp; Operations</a>
-<ul>
-<li><a href="#org0ee6aec"><code>AND</code> Gate</a></li>
-<li><a href="#org76d9221"><code>OR</code> Gate</a></li>
-<li><a href="#orgbeb9ee7"><code>NOT</code> Gate</a></li>
-<li><a href="#org97f6680"><code>NAND</code> Gate</a></li>
-<li><a href="#orged3ce87"><code>NOR</code> Gate</a></li>
-<li><a href="#org3e3a75c"><code>XOR</code> Gate</a></li>
-<li><a href="#orgeb4164d"><code>XNOR</code> Gate</a></li>
-</ul>
-</li>
-<li><a href="#orgeef9365">Basic Identities and Duality principle</a>
-<ul>
-<li><a href="#orgdc44284">to get a dual</a></li>
-</ul>
-</li>
-<li><a href="#orgbab3342">Algerbraic Manipulations</a></li>
-</ul>
-</li>
-<li><a href="#orgb6250d0"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a>
-<ul>
-<li>
-<ul>
-<li><a href="#orga2dc5b5">Suwaiyan slides</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org96e5248"><span class="todo TODO">TODO</span> Other Gate types</a></li>
+<li><a href="#org7b2789f">Videos</a></li>
+<li><a href="#org9fe7f46">Data Representation</a></li>
+<li><a href="#org09c2a30">Binary Logic and Gates</a></li>
+<li><a href="#orgda7a37a"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a></li>
+<li><a href="#org1ef5f6a"><span class="todo TODO">TODO</span> Other Gate types</a></li>
 </ul>
 </div>
 </div>
@@ -117,31 +46,31 @@ IMPORTANT NOTICE:
 </blockquote>
 <hr />
 
-<div id="outline-container-orge348c76" class="outline-2">
-<h2 id="orge348c76">Videos</h2>
-<div class="outline-text-2" id="text-orge348c76">
+<div id="outline-container-org7b2789f" class="outline-2">
+<h2 id="org7b2789f">Videos</h2>
+<div class="outline-text-2" id="text-org7b2789f">
 </div>
-<div id="outline-container-org6ad2225" class="outline-3">
-<h3 id="org6ad2225">Dr. M. Mudawar</h3>
-<div class="outline-text-3" id="text-org6ad2225">
+<div id="outline-container-orge97c930" class="outline-3">
+<h3 id="orge97c930">Dr. M. Mudawar</h3>
+<div class="outline-text-3" id="text-orge97c930">
 <ul class="org-ul">
 <li>YouTube playlist:  <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8df5a9c" class="outline-3">
-<h3 id="org8df5a9c">Dr. Aiman El-Maleh</h3>
-<div class="outline-text-3" id="text-org8df5a9c">
+<div id="outline-container-orge3622f1" class="outline-3">
+<h3 id="orge3622f1">Dr. Aiman El-Maleh</h3>
+<div class="outline-text-3" id="text-orge3622f1">
 <ul class="org-ul">
 <li>Microsoft stream videos: <a href="https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbf8778b" class="outline-3">
-<h3 id="orgbf8778b">Dr. Ali Al-Suwaiyan</h3>
-<div class="outline-text-3" id="text-orgbf8778b">
+<div id="outline-container-org2857b96" class="outline-3">
+<h3 id="org2857b96">Dr. Ali Al-Suwaiyan</h3>
+<div class="outline-text-3" id="text-org2857b96">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ">click here</a></li>
 </ul>
@@ -240,22 +169,22 @@ IMPORTANT NOTICE:
 </div>
 </div>
 </div>
-<div id="outline-container-orgc538084" class="outline-2">
-<h2 id="orgc538084">Data Representation</h2>
-<div class="outline-text-2" id="text-orgc538084">
+<div id="outline-container-org9fe7f46" class="outline-2">
+<h2 id="org9fe7f46">Data Representation</h2>
+<div class="outline-text-2" id="text-org9fe7f46">
 </div>
-<div id="outline-container-orge0f3774" class="outline-4">
-<h4 id="orge0f3774">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-orge0f3774">
+<div id="outline-container-org492b78e" class="outline-4">
+<h4 id="org492b78e">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-org492b78e">
 <ul class="org-ul">
 <li><a href="./res/01-NumberSystems-su.pdf">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7161b20" class="outline-3">
-<h3 id="org7161b20">Introduction</h3>
-<div class="outline-text-3" id="text-org7161b20">
+<div id="outline-container-org560fcaa" class="outline-3">
+<h3 id="org560fcaa">Introduction</h3>
+<div class="outline-text-3" id="text-org560fcaa">
 <ul class="org-ul">
 <li>computers represent data in binary numbers (1 and 0)</li>
 <li>all data must be represented in binary format</li>
@@ -266,9 +195,9 @@ IMPORTANT NOTICE:
 <hr />
 </div>
 </div>
-<div id="outline-container-orgb874264" class="outline-3">
-<h3 id="orgb874264">Numbering Systems</h3>
-<div class="outline-text-3" id="text-orgb874264">
+<div id="outline-container-org4e44407" class="outline-3">
+<h3 id="org4e44407">Numbering Systems</h3>
+<div class="outline-text-3" id="text-org4e44407">
 <ul class="org-ul">
 <li>Numbering systems are characterized by their base number (also called radix or r for short)</li>
 <li>a number with base n will have digits from 0 to (n-1)</li>
@@ -324,9 +253,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-orged19313" class="outline-3">
-<h3 id="orged19313">Weighted Number Systems</h3>
-<div class="outline-text-3" id="text-orged19313">
+<div id="outline-container-orgaaa067a" class="outline-3">
+<h3 id="orgaaa067a">Weighted Number Systems</h3>
+<div class="outline-text-3" id="text-orgaaa067a">
 <ul class="org-ul">
 <li>a number <code>D</code> consists of <code>n</code> digits with each digit having a particular position.</li>
 <li>Every Digit has a fixed weight</li>
@@ -342,9 +271,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-orgd41af70" class="outline-3">
-<h3 id="orgd41af70">The Radix (<code>Base</code>)</h3>
-<div class="outline-text-3" id="text-orgd41af70">
+<div id="outline-container-org2c32316" class="outline-3">
+<h3 id="org2c32316">The Radix (<code>Base</code>)</h3>
+<div class="outline-text-3" id="text-org2c32316">
 <p>
 the allowed set of digits are from <code>0</code> to <code>r-1</code>
 for example in base 8: <code>0...7</code>
@@ -354,9 +283,9 @@ for example in base 8: <code>0...7</code>
 </ul>
 <hr />
 </div>
-<div id="outline-container-org3fac403" class="outline-4">
-<h4 id="org3fac403">Digit weight</h4>
-<div class="outline-text-4" id="text-org3fac403">
+<div id="outline-container-orgb9e5459" class="outline-4">
+<h4 id="orgb9e5459">Digit weight</h4>
+<div class="outline-text-4" id="text-orgb9e5459">
 <p>
 example a number in base 8: <code>34556</code>
 </p>
@@ -368,9 +297,9 @@ example a number in base 8: <code>34556</code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdd552c2" class="outline-3">
-<h3 id="orgdd552c2">Binary System</h3>
-<div class="outline-text-3" id="text-orgdd552c2">
+<div id="outline-container-orgb3f3a0d" class="outline-3">
+<h3 id="orgb3f3a0d">Binary System</h3>
+<div class="outline-text-3" id="text-orgb3f3a0d">
 <ul class="org-ul">
 <li>the r = <code>2</code></li>
 <li>each digit is either 1 or 0</li>
@@ -458,9 +387,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-org08b2990" class="outline-3">
-<h3 id="org08b2990">Octal System</h3>
-<div class="outline-text-3" id="text-org08b2990">
+<div id="outline-container-orgc56a266" class="outline-3">
+<h3 id="orgc56a266">Octal System</h3>
+<div class="outline-text-3" id="text-orgc56a266">
 <ul class="org-ul">
 <li>r = 8</li>
 <li>Octal digits = {0, 1, 2, 3, 4, 5, 6, 7}</li>
@@ -469,9 +398,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-orgdefe3e5" class="outline-3">
-<h3 id="orgdefe3e5">Hexadecimal System</h3>
-<div class="outline-text-3" id="text-orgdefe3e5">
+<div id="outline-container-orgea08537" class="outline-3">
+<h3 id="orgea08537">Hexadecimal System</h3>
+<div class="outline-text-3" id="text-orgea08537">
 <ul class="org-ul">
 <li>r = 16</li>
 <li>Digits are 0..9 then A, B, C, D, E, F</li>
@@ -482,9 +411,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-orgca7fc3b" class="outline-3">
-<h3 id="orgca7fc3b">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
-<div class="outline-text-3" id="text-orgca7fc3b">
+<div id="outline-container-orgf220898" class="outline-3">
+<h3 id="orgf220898">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
+<div class="outline-text-3" id="text-orgf220898">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -622,9 +551,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-org828908e" class="outline-3">
-<h3 id="org828908e">Binary coded decimal</h3>
-<div class="outline-text-3" id="text-org828908e">
+<div id="outline-container-org836d322" class="outline-3">
+<h3 id="org836d322">Binary coded decimal</h3>
+<div class="outline-text-3" id="text-org836d322">
 <ul class="org-ul">
 <li>every number is represented as 4 bits</li>
 <li>there are different ways to represent it
@@ -641,9 +570,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-org02461a7" class="outline-3">
-<h3 id="org02461a7">ASCII Chars</h3>
-<div class="outline-text-3" id="text-org02461a7">
+<div id="outline-container-org7ff4590" class="outline-3">
+<h3 id="org7ff4590">ASCII Chars</h3>
+<div class="outline-text-3" id="text-org7ff4590">
 <ul class="org-ul">
 <li>each number/char/symbol is represented with a number from 0 to 127</li>
 <li>extended ascii has to 256 numbers</li>
@@ -652,18 +581,18 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-org1c46f7e" class="outline-3">
-<h3 id="org1c46f7e">Error detection by parity bit</h3>
-<div class="outline-text-3" id="text-org1c46f7e">
+<div id="outline-container-orga4fae30" class="outline-3">
+<h3 id="orga4fae30">Error detection by parity bit</h3>
+<div class="outline-text-3" id="text-orga4fae30">
 <ul class="org-ul">
 <li>Sender tries to send data to reciever which is encodeded in binary</li>
 <li>Data could get corrupted during transmission</li>
 <li>so basically we construct a basic error checker that would help reduce errors (but not always the case)</li>
 </ul>
 </div>
-<div id="outline-container-org5814863" class="outline-4">
-<h4 id="org5814863">Parity Bit</h4>
-<div class="outline-text-4" id="text-org5814863">
+<div id="outline-container-org393e0b5" class="outline-4">
+<h4 id="org393e0b5">Parity Bit</h4>
+<div class="outline-text-4" id="text-org393e0b5">
 <ul class="org-ul">
 <li>We choose an even or odd parity bit</li>
 <li>Even parity: number of 1s is even
@@ -685,21 +614,21 @@ check slides for example
 </div>
 </div>
 
-<div id="outline-container-org7a4f3fc" class="outline-2">
-<h2 id="org7a4f3fc">Binary Logic and Gates</h2>
-<div class="outline-text-2" id="text-org7a4f3fc">
+<div id="outline-container-org09c2a30" class="outline-2">
+<h2 id="org09c2a30">Binary Logic and Gates</h2>
+<div class="outline-text-2" id="text-org09c2a30">
 </div>
-<div id="outline-container-orgfc7f2c7" class="outline-4">
-<h4 id="orgfc7f2c7">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-orgfc7f2c7">
+<div id="outline-container-org36eaab2" class="outline-4">
+<h4 id="org36eaab2">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-org36eaab2">
 <ul class="org-ul">
 <li><a href="./res/02-BooleanAlgebra.pdf">click here</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6023b22" class="outline-3">
-<h3 id="org6023b22">Boolean Algebra</h3>
-<div class="outline-text-3" id="text-org6023b22">
+<div id="outline-container-org36fdb62" class="outline-3">
+<h3 id="org36fdb62">Boolean Algebra</h3>
+<div class="outline-text-3" id="text-org36fdb62">
 <p>
 Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; or &rsquo;1&rsquo; corresponding to High(1) or Low(0) voltages.
 </p>
@@ -719,9 +648,9 @@ Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; 
 <li>Example <code>F = A.B + 1</code></li>
 </ul>
 </div>
-<div id="outline-container-org04c73ff" class="outline-4">
-<h4 id="org04c73ff">Operator precedence</h4>
-<div class="outline-text-4" id="text-org04c73ff">
+<div id="outline-container-org71720fb" class="outline-4">
+<h4 id="org71720fb">Operator precedence</h4>
+<div class="outline-text-4" id="text-org71720fb">
 <ol class="org-ol">
 <li>Parethesis <code>( Expression )</code> {Highest priority}</li>
 <li><code>NOT</code> operator <code>Expr'</code></li>
@@ -732,18 +661,18 @@ Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; 
 </div>
 </div>
 </div>
-<div id="outline-container-org56ec107" class="outline-3">
-<h3 id="org56ec107">Logic Gates &amp; Operations</h3>
-<div class="outline-text-3" id="text-org56ec107">
+<div id="outline-container-org0015a95" class="outline-3">
+<h3 id="org0015a95">Logic Gates &amp; Operations</h3>
+<div class="outline-text-3" id="text-org0015a95">
 <p>
 Gate drawings are from wikimedia (C)
 </p>
 </div>
-<div id="outline-container-org0ee6aec" class="outline-4">
-<h4 id="org0ee6aec"><code>AND</code> Gate</h4>
-<div class="outline-text-4" id="text-org0ee6aec">
+<div id="outline-container-org3cbb2ee" class="outline-4">
+<h4 id="org3cbb2ee"><code>AND</code> Gate</h4>
+<div class="outline-text-4" id="text-org3cbb2ee">
 
-<div id="org5681e22" class="figure">
+<div id="orgd6dff17" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/AND_ANSI_Labelled.svg" alt="AND_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -798,11 +727,11 @@ Truth table for (AB) or (A*B)
 </div>
 </div>
 
-<div id="outline-container-org76d9221" class="outline-4">
-<h4 id="org76d9221"><code>OR</code> Gate</h4>
-<div class="outline-text-4" id="text-org76d9221">
+<div id="outline-container-org126d2ce" class="outline-4">
+<h4 id="org126d2ce"><code>OR</code> Gate</h4>
+<div class="outline-text-4" id="text-org126d2ce">
 
-<div id="org80a0d01" class="figure">
+<div id="orga30d912" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/OR_ANSI_Labelled.svg" alt="OR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -857,11 +786,11 @@ Truth Table for (A+B)
 </div>
 </div>
 
-<div id="outline-container-orgbeb9ee7" class="outline-4">
-<h4 id="orgbeb9ee7"><code>NOT</code> Gate</h4>
-<div class="outline-text-4" id="text-orgbeb9ee7">
+<div id="outline-container-orgf65e3f7" class="outline-4">
+<h4 id="orgf65e3f7"><code>NOT</code> Gate</h4>
+<div class="outline-text-4" id="text-orgf65e3f7">
 
-<div id="org04b017b" class="figure">
+<div id="org87c2a30" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/NOT_ANSI_Labelled.svg" alt="NOT_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -899,11 +828,11 @@ Truth Table for (A&rsquo;)
 </div>
 </div>
 
-<div id="outline-container-org97f6680" class="outline-4">
-<h4 id="org97f6680"><code>NAND</code> Gate</h4>
-<div class="outline-text-4" id="text-org97f6680">
+<div id="outline-container-orgd3245d3" class="outline-4">
+<h4 id="orgd3245d3"><code>NAND</code> Gate</h4>
+<div class="outline-text-4" id="text-orgd3245d3">
 
-<div id="org33c47c3" class="figure">
+<div id="orgc405ff5" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/NAND_ANSI_Labelled.svg" alt="NAND_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -958,11 +887,11 @@ Truth Table for (AB)&rsquo;
 </div>
 </div>
 
-<div id="outline-container-orged3ce87" class="outline-4">
-<h4 id="orged3ce87"><code>NOR</code> Gate</h4>
-<div class="outline-text-4" id="text-orged3ce87">
+<div id="outline-container-orgdd8f18c" class="outline-4">
+<h4 id="orgdd8f18c"><code>NOR</code> Gate</h4>
+<div class="outline-text-4" id="text-orgdd8f18c">
 
-<div id="orgf8c74ad" class="figure">
+<div id="org6cf8ca9" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/NOR_ANSI_Labelled.svg" alt="NOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -1017,11 +946,11 @@ Truth Table for (A+B)&rsquo;
 </div>
 </div>
 
-<div id="outline-container-org3e3a75c" class="outline-4">
-<h4 id="org3e3a75c"><code>XOR</code> Gate</h4>
-<div class="outline-text-4" id="text-org3e3a75c">
+<div id="outline-container-org7c37567" class="outline-4">
+<h4 id="org7c37567"><code>XOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org7c37567">
 
-<div id="org139ede0" class="figure">
+<div id="org0787f23" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/XOR_ANSI_Labelled.svg" alt="XOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -1076,11 +1005,11 @@ Truth Table for (A XOR B)
 </div>
 </div>
 
-<div id="outline-container-orgeb4164d" class="outline-4">
-<h4 id="orgeb4164d"><code>XNOR</code> Gate</h4>
-<div class="outline-text-4" id="text-orgeb4164d">
+<div id="outline-container-org89329bc" class="outline-4">
+<h4 id="org89329bc"><code>XNOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org89329bc">
 
-<div id="org02b94a1" class="figure">
+<div id="orgd22bba8" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/XNOR_ANSI_Labelled.svg" alt="XNOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -1140,9 +1069,9 @@ NOTE: solve a few problems on slides and etc.<br />
 </div>
 </div>
 
-<div id="outline-container-orgeef9365" class="outline-3">
-<h3 id="orgeef9365">Basic Identities and Duality principle</h3>
-<div class="outline-text-3" id="text-orgeef9365">
+<div id="outline-container-org5df24a9" class="outline-3">
+<h3 id="org5df24a9">Basic Identities and Duality principle</h3>
+<div class="outline-text-3" id="text-org5df24a9">
 <p>
 Identities Table
 </p>
@@ -1240,9 +1169,9 @@ Identities Table
 </table>
 </div>
 
-<div id="outline-container-orgdc44284" class="outline-4">
-<h4 id="orgdc44284">to get a dual</h4>
-<div class="outline-text-4" id="text-orgdc44284">
+<div id="outline-container-orgf3a502f" class="outline-4">
+<h4 id="orgf3a502f">to get a dual</h4>
+<div class="outline-text-4" id="text-orgf3a502f">
 <ul class="org-ul">
 <li>Change every <code>AND</code> to <code>OR</code> (. to +)</li>
 <li>Change every <code>OR</code> to <code>AND</code> (+ to .)</li>
@@ -1260,9 +1189,9 @@ Dual can be used to simplify a function but must be dualed back and the simplifi
 </div>
 </div>
 </div>
-<div id="outline-container-orgbab3342" class="outline-3">
-<h3 id="orgbab3342">Algerbraic Manipulations</h3>
-<div class="outline-text-3" id="text-orgbab3342">
+<div id="outline-container-org6709154" class="outline-3">
+<h3 id="org6709154">Algerbraic Manipulations</h3>
+<div class="outline-text-3" id="text-org6709154">
 <p class="verse">
 Solve problems in Suwaiyan slides from [BooleanAlgebra slides]<br />
 from page 11 to 16<br />
@@ -1273,26 +1202,26 @@ also practice more<br />
 </div>
 </div>
 </div>
-<div id="outline-container-orgb6250d0" class="outline-2">
-<h2 id="orgb6250d0"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
-<div class="outline-text-2" id="text-orgb6250d0">
+<div id="outline-container-orgda7a37a" class="outline-2">
+<h2 id="orgda7a37a"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
+<div class="outline-text-2" id="text-orgda7a37a">
 </div>
-<div id="outline-container-orga2dc5b5" class="outline-4">
-<h4 id="orga2dc5b5">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-orga2dc5b5">
+<div id="outline-container-orgc686e5d" class="outline-4">
+<h4 id="orgc686e5d">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-orgc686e5d">
 <ul class="org-ul">
 <li><a href="./res/03-StandardAndCanonicalForms.pdf">click here</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org96e5248" class="outline-2">
-<h2 id="org96e5248"><span class="todo TODO">TODO</span> Other Gate types</h2>
+<div id="outline-container-org1ef5f6a" class="outline-2">
+<h2 id="org1ef5f6a"><span class="todo TODO">TODO</span> Other Gate types</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Airbus5717</p>
-<p class="date">Created: 2022-09-19 Mon 14:32</p>
+<p class="date">Created: 2022-09-19 Mon 14:37</p>
 </div>
 </body>
 </html>

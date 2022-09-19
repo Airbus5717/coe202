@@ -1,5 +1,5 @@
 #+TITLE: COE 202 notes - Airbus5717
-#+OPTIONS: num:nil html-style:nil
+#+OPTIONS: num:nil html-style:nil toc:1
 #+AUTHOR: Airbus5717
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+LaTeX_HEADER: \usepackage{minted}
