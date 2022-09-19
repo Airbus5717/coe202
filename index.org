@@ -1,5 +1,5 @@
 #+TITLE: COE 202 notes - Airbus5717
-#+OPTIONS: num:nil html-style:nil date:nil timestamp:nil
+#+OPTIONS: num:nil html-style:nil
 #+AUTHOR: Airbus5717
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+LaTeX_HEADER: \usepackage{minted}
@@ -7,7 +7,6 @@
 -----
 #+begin_quote
 IMPORTANT NOTICE:
-- THE LATEST PDF VERSION IS AVAILABLE [[https://github.com/Airbus5717/coe202/blob/main/index.pdf][click here]]
 - Mobile screens may not display the web page properly due to alignment issues
 - These notes are not enough for high grade (u need to practice and read the slides)
 - These notes are according to Dr. Al-Suwaiyan's order of sections
@@ -176,6 +175,108 @@ check slides for example
 * TODO Binary Logic and Gates
 *** Suwaiyan slides
 - [[./res/02-BooleanAlgebra.pdf][click here]]
+** Boolean Algebra
+Digital circuts use binary Systems, signals can be either logic '0' or '1' corresponding to High(1) or Low(0) voltages.
+- Digital Circuts take binary signals and produce binary signals
+- Binary logic algebra is commonly referred to as binary algebra
+- Algebric structure with
+  - Booleans = {0 , 1}
+  - Two Binary Operators = {., +}
+    - the dot =.= represents =AND=
+    - the plus sign =+= represents =OR=
+  - One Unary operator = (written as a Dash above the symbol or as ='= after the symbol)
+- Example =F = A.B + 1=
+*** Operator precedence
+1. Parethesis =( Expression )= {Highest priority}
+2. =NOT= operator =Expr'=
+3. =AND= operator =Expr1 . Expr2=
+4. =OR= operator =Expr1 + Expr2= {Lowest priority}
+-----
+** Logic Gates & Operations
+Gate drawings are from wikimedia (C)
+*** =AND= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/b/b9/AND_ANSI_Labelled.svg]]
+
+Truth table for (AB) or (A*B)
+| A | B | AB |
+|---+---+----|
+| 0 | 0 |  0 |
+| 0 | 1 |  0 |
+| 1 | 0 |  0 |
+| 1 | 1 |  1 |
+-----
+
+*** =OR= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/1/16/OR_ANSI_Labelled.svg]]
+
+Truth Table for (A+B)
+| A | B | A+B |
+|---+---+-----|
+| 0 | 0 |   0 |
+| 0 | 1 |   1 |
+| 1 | 0 |   1 |
+| 1 | 1 |   1 |
+-----
+
+*** =NOT= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/6/60/NOT_ANSI_Labelled.svg]]
+
+Truth Table for (A')
+| A | A' |
+|---+----|
+| 0 |  1 |
+| 1 |  0 |
+-----
+
+*** =NAND= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/e/e6/NAND_ANSI_Labelled.svg]]
+
+Truth Table for (AB)'
+| A | B | (AB)' |
+|---+---+-------|
+| 0 | 0 |     1 |
+| 0 | 1 |     1 |
+| 1 | 0 |     1 |
+| 1 | 1 |     0 |
+-----
+
+*** =NOR= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/c/c6/NOR_ANSI_Labelled.svg]]
+
+Truth Table for (A+B)'
+| A | B | (A+B)' |
+|---+---+--------|
+| 0 | 0 |      1 |
+| 0 | 1 |      0 |
+| 1 | 0 |      0 |
+| 1 | 1 |      0 |
+-----
+
+*** =XOR= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/1/17/XOR_ANSI_Labelled.svg]]
+
+Truth Table for (A XOR B)
+| A | B | A XOR B |
+|---+---+---------|
+| 0 | 0 |       0 |
+| 0 | 1 |       1 |
+| 1 | 0 |       1 |
+| 1 | 1 |       0 |
+-----
+
+*** =XNOR= Gate
+[[https://upload.wikimedia.org/wikipedia/commons/b/b8/XNOR_ANSI_Labelled.svg]]
+
+Truth Table for (A XNOR B)
+| A | B | A XOR B |
+|---+---+---------|
+| 0 | 0 |       1 |
+| 0 | 1 |       0 |
+| 1 | 0 |       0 |
+| 1 | 1 |       1 |
+-----
+
+
 * TODO Standard & Canonical Forms
 *** Suwaiyan slides
 - [[./res/03-StandardAndCanonicalForms.pdf][click here]]

@@ -3,6 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2022-09-19 Mon 14:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>COE 202 notes - Airbus5717</title>
@@ -22,60 +23,76 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgdf1acd5">Videos</a>
+<li><a href="#orgcd41bc3">Videos</a>
 <ul>
-<li><a href="#org3d6c5d3">Dr. M. Mudawar</a></li>
-<li><a href="#org7137fd9">Dr. Aiman El-Maleh</a></li>
-<li><a href="#orgbc5bfda">Dr. Ali Al-Suwaiyan</a></li>
+<li><a href="#org3df17ba">Dr. M. Mudawar</a></li>
+<li><a href="#orga0c6578">Dr. Aiman El-Maleh</a></li>
+<li><a href="#org4a25c21">Dr. Ali Al-Suwaiyan</a></li>
 </ul>
 </li>
-<li><a href="#org860be7a">Data Representation</a>
-<ul>
-<li>
-<ul>
-<li><a href="#org39001d5">Suwaiyan slides</a></li>
-</ul>
-</li>
-<li><a href="#org9dbecba">Introduction</a></li>
-<li><a href="#org1195ff8">Numbering Systems</a></li>
-<li><a href="#orgf752815">Weighted Number Systems</a></li>
-<li><a href="#orgeaead42">The Radix (<code>Base</code>)</a>
-<ul>
-<li><a href="#org392eeb6">Digit weight</a></li>
-</ul>
-</li>
-<li><a href="#org5614979">Binary System</a></li>
-<li><a href="#orgd575f0f">Octal System</a></li>
-<li><a href="#orgc7d8671">Hexadecimal System</a></li>
-<li><a href="#orgf00ebe6">Integers in (Binary, Octal, Decimal and Hexadecimal)</a></li>
-<li><a href="#org9ec214f">Binary coded decimal</a></li>
-<li><a href="#orgf306ef7">ASCII Chars</a></li>
-<li><a href="#orgfac6040">Error detection by parity bit</a>
-<ul>
-<li><a href="#org89c22c1">Parity Bit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgc9c8b85"><span class="todo TODO">TODO</span> Binary Logic and Gates</a>
+<li><a href="#org6956a95">Data Representation</a>
 <ul>
 <li>
 <ul>
-<li><a href="#orgb059671">Suwaiyan slides</a></li>
+<li><a href="#org5cd113d">Suwaiyan slides</a></li>
+</ul>
+</li>
+<li><a href="#org245099f">Introduction</a></li>
+<li><a href="#org4b2097b">Numbering Systems</a></li>
+<li><a href="#orgf86b280">Weighted Number Systems</a></li>
+<li><a href="#org73b7f70">The Radix (<code>Base</code>)</a>
+<ul>
+<li><a href="#org35e6e0b">Digit weight</a></li>
+</ul>
+</li>
+<li><a href="#org28bacac">Binary System</a></li>
+<li><a href="#orgf48e9b0">Octal System</a></li>
+<li><a href="#org574cd79">Hexadecimal System</a></li>
+<li><a href="#org7a1832f">Integers in (Binary, Octal, Decimal and Hexadecimal)</a></li>
+<li><a href="#org40c7293">Binary coded decimal</a></li>
+<li><a href="#org0402518">ASCII Chars</a></li>
+<li><a href="#orgf4aad92">Error detection by parity bit</a>
+<ul>
+<li><a href="#org21cc431">Parity Bit</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org95138e9"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a>
+<li><a href="#org97b6664"><span class="todo TODO">TODO</span> Binary Logic and Gates</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org15ee523">Suwaiyan slides</a></li>
+<li><a href="#orgbf76136">Suwaiyan slides</a></li>
+</ul>
+</li>
+<li><a href="#orgcb260df">Boolean Algebra</a>
+<ul>
+<li><a href="#org7569d54">Operator precedence</a></li>
+</ul>
+</li>
+<li><a href="#org2e6c35b">Logic Gates &amp; Operations</a>
+<ul>
+<li><a href="#orga35e8ed"><code>AND</code> Gate</a></li>
+<li><a href="#org8ef81d0"><code>OR</code> Gate</a></li>
+<li><a href="#org2868b74"><code>NOT</code> Gate</a></li>
+<li><a href="#org61c0a10"><code>NAND</code> Gate</a></li>
+<li><a href="#orgb2d30b7"><code>NOR</code> Gate</a></li>
+<li><a href="#org4857126"><code>XOR</code> Gate</a></li>
+<li><a href="#orgde55fd3"><code>XNOR</code> Gate</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgf847e50"><span class="todo TODO">TODO</span> Other Gate types</a></li>
+<li><a href="#org42fa913"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a>
+<ul>
+<li>
+<ul>
+<li><a href="#orgcd1daf0">Suwaiyan slides</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org527d497"><span class="todo TODO">TODO</span> Other Gate types</a></li>
 </ul>
 </div>
 </div>
@@ -85,7 +102,6 @@
 IMPORTANT NOTICE:
 </p>
 <ul class="org-ul">
-<li>THE LATEST PDF VERSION IS AVAILABLE <a href="https://github.com/Airbus5717/coe202/blob/main/index.pdf">click here</a></li>
 <li>Mobile screens may not display the web page properly due to alignment issues</li>
 <li>These notes are not enough for high grade (u need to practice and read the slides)</li>
 <li>These notes are according to Dr. Al-Suwaiyan&rsquo;s order of sections</li>
@@ -95,31 +111,31 @@ IMPORTANT NOTICE:
 </blockquote>
 <hr />
 
-<div id="outline-container-orgdf1acd5" class="outline-2">
-<h2 id="orgdf1acd5">Videos</h2>
-<div class="outline-text-2" id="text-orgdf1acd5">
+<div id="outline-container-orgcd41bc3" class="outline-2">
+<h2 id="orgcd41bc3">Videos</h2>
+<div class="outline-text-2" id="text-orgcd41bc3">
 </div>
-<div id="outline-container-org3d6c5d3" class="outline-3">
-<h3 id="org3d6c5d3">Dr. M. Mudawar</h3>
-<div class="outline-text-3" id="text-org3d6c5d3">
+<div id="outline-container-org3df17ba" class="outline-3">
+<h3 id="org3df17ba">Dr. M. Mudawar</h3>
+<div class="outline-text-3" id="text-org3df17ba">
 <ul class="org-ul">
 <li>YouTube playlist:  <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7137fd9" class="outline-3">
-<h3 id="org7137fd9">Dr. Aiman El-Maleh</h3>
-<div class="outline-text-3" id="text-org7137fd9">
+<div id="outline-container-orga0c6578" class="outline-3">
+<h3 id="orga0c6578">Dr. Aiman El-Maleh</h3>
+<div class="outline-text-3" id="text-orga0c6578">
 <ul class="org-ul">
 <li>Microsoft stream videos: <a href="https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbc5bfda" class="outline-3">
-<h3 id="orgbc5bfda">Dr. Ali Al-Suwaiyan</h3>
-<div class="outline-text-3" id="text-orgbc5bfda">
+<div id="outline-container-org4a25c21" class="outline-3">
+<h3 id="org4a25c21">Dr. Ali Al-Suwaiyan</h3>
+<div class="outline-text-3" id="text-org4a25c21">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ">click here</a></li>
 </ul>
@@ -218,22 +234,22 @@ IMPORTANT NOTICE:
 </div>
 </div>
 </div>
-<div id="outline-container-org860be7a" class="outline-2">
-<h2 id="org860be7a">Data Representation</h2>
-<div class="outline-text-2" id="text-org860be7a">
+<div id="outline-container-org6956a95" class="outline-2">
+<h2 id="org6956a95">Data Representation</h2>
+<div class="outline-text-2" id="text-org6956a95">
 </div>
-<div id="outline-container-org39001d5" class="outline-4">
-<h4 id="org39001d5">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-org39001d5">
+<div id="outline-container-org5cd113d" class="outline-4">
+<h4 id="org5cd113d">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-org5cd113d">
 <ul class="org-ul">
 <li><a href="./res/01-NumberSystems-su.pdf">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9dbecba" class="outline-3">
-<h3 id="org9dbecba">Introduction</h3>
-<div class="outline-text-3" id="text-org9dbecba">
+<div id="outline-container-org245099f" class="outline-3">
+<h3 id="org245099f">Introduction</h3>
+<div class="outline-text-3" id="text-org245099f">
 <ul class="org-ul">
 <li>computers represent data in binary numbers (1 and 0)</li>
 <li>all data must be represented in binary format</li>
@@ -244,9 +260,9 @@ IMPORTANT NOTICE:
 <hr />
 </div>
 </div>
-<div id="outline-container-org1195ff8" class="outline-3">
-<h3 id="org1195ff8">Numbering Systems</h3>
-<div class="outline-text-3" id="text-org1195ff8">
+<div id="outline-container-org4b2097b" class="outline-3">
+<h3 id="org4b2097b">Numbering Systems</h3>
+<div class="outline-text-3" id="text-org4b2097b">
 <ul class="org-ul">
 <li>Numbering systems are characterized by their base number (also called radix or r for short)</li>
 <li>a number with base n will have digits from 0 to (n-1)</li>
@@ -302,9 +318,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-orgf752815" class="outline-3">
-<h3 id="orgf752815">Weighted Number Systems</h3>
-<div class="outline-text-3" id="text-orgf752815">
+<div id="outline-container-orgf86b280" class="outline-3">
+<h3 id="orgf86b280">Weighted Number Systems</h3>
+<div class="outline-text-3" id="text-orgf86b280">
 <ul class="org-ul">
 <li>a number <code>D</code> consists of <code>n</code> digits with each digit having a particular position.</li>
 <li>Every Digit has a fixed weight</li>
@@ -320,9 +336,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-orgeaead42" class="outline-3">
-<h3 id="orgeaead42">The Radix (<code>Base</code>)</h3>
-<div class="outline-text-3" id="text-orgeaead42">
+<div id="outline-container-org73b7f70" class="outline-3">
+<h3 id="org73b7f70">The Radix (<code>Base</code>)</h3>
+<div class="outline-text-3" id="text-org73b7f70">
 <p>
 the allowed set of digits are from <code>0</code> to <code>r-1</code>
 for example in base 8: <code>0...7</code>
@@ -332,9 +348,9 @@ for example in base 8: <code>0...7</code>
 </ul>
 <hr />
 </div>
-<div id="outline-container-org392eeb6" class="outline-4">
-<h4 id="org392eeb6">Digit weight</h4>
-<div class="outline-text-4" id="text-org392eeb6">
+<div id="outline-container-org35e6e0b" class="outline-4">
+<h4 id="org35e6e0b">Digit weight</h4>
+<div class="outline-text-4" id="text-org35e6e0b">
 <p>
 example a number in base 8: <code>34556</code>
 </p>
@@ -346,9 +362,9 @@ example a number in base 8: <code>34556</code>
 </div>
 </div>
 </div>
-<div id="outline-container-org5614979" class="outline-3">
-<h3 id="org5614979">Binary System</h3>
-<div class="outline-text-3" id="text-org5614979">
+<div id="outline-container-org28bacac" class="outline-3">
+<h3 id="org28bacac">Binary System</h3>
+<div class="outline-text-3" id="text-org28bacac">
 <ul class="org-ul">
 <li>the r = <code>2</code></li>
 <li>each digit is either 1 or 0</li>
@@ -436,9 +452,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-orgd575f0f" class="outline-3">
-<h3 id="orgd575f0f">Octal System</h3>
-<div class="outline-text-3" id="text-orgd575f0f">
+<div id="outline-container-orgf48e9b0" class="outline-3">
+<h3 id="orgf48e9b0">Octal System</h3>
+<div class="outline-text-3" id="text-orgf48e9b0">
 <ul class="org-ul">
 <li>r = 8</li>
 <li>Octal digits = {0, 1, 2, 3, 4, 5, 6, 7}</li>
@@ -447,9 +463,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-orgc7d8671" class="outline-3">
-<h3 id="orgc7d8671">Hexadecimal System</h3>
-<div class="outline-text-3" id="text-orgc7d8671">
+<div id="outline-container-org574cd79" class="outline-3">
+<h3 id="org574cd79">Hexadecimal System</h3>
+<div class="outline-text-3" id="text-org574cd79">
 <ul class="org-ul">
 <li>r = 16</li>
 <li>Digits are 0..9 then A, B, C, D, E, F</li>
@@ -460,9 +476,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-orgf00ebe6" class="outline-3">
-<h3 id="orgf00ebe6">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
-<div class="outline-text-3" id="text-orgf00ebe6">
+<div id="outline-container-org7a1832f" class="outline-3">
+<h3 id="org7a1832f">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
+<div class="outline-text-3" id="text-org7a1832f">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -600,9 +616,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-org9ec214f" class="outline-3">
-<h3 id="org9ec214f">Binary coded decimal</h3>
-<div class="outline-text-3" id="text-org9ec214f">
+<div id="outline-container-org40c7293" class="outline-3">
+<h3 id="org40c7293">Binary coded decimal</h3>
+<div class="outline-text-3" id="text-org40c7293">
 <ul class="org-ul">
 <li>every number is represented as 4 bits</li>
 <li>there are different ways to represent it
@@ -619,9 +635,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-orgf306ef7" class="outline-3">
-<h3 id="orgf306ef7">ASCII Chars</h3>
-<div class="outline-text-3" id="text-orgf306ef7">
+<div id="outline-container-org0402518" class="outline-3">
+<h3 id="org0402518">ASCII Chars</h3>
+<div class="outline-text-3" id="text-org0402518">
 <ul class="org-ul">
 <li>each number/char/symbol is represented with a number from 0 to 127</li>
 <li>extended ascii has to 256 numbers</li>
@@ -630,18 +646,18 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-orgfac6040" class="outline-3">
-<h3 id="orgfac6040">Error detection by parity bit</h3>
-<div class="outline-text-3" id="text-orgfac6040">
+<div id="outline-container-orgf4aad92" class="outline-3">
+<h3 id="orgf4aad92">Error detection by parity bit</h3>
+<div class="outline-text-3" id="text-orgf4aad92">
 <ul class="org-ul">
 <li>Sender tries to send data to reciever which is encodeded in binary</li>
 <li>Data could get corrupted during transmission</li>
 <li>so basically we construct a basic error checker that would help reduce errors (but not always the case)</li>
 </ul>
 </div>
-<div id="outline-container-org89c22c1" class="outline-4">
-<h4 id="org89c22c1">Parity Bit</h4>
-<div class="outline-text-4" id="text-org89c22c1">
+<div id="outline-container-org21cc431" class="outline-4">
+<h4 id="org21cc431">Parity Bit</h4>
+<div class="outline-text-4" id="text-org21cc431">
 <ul class="org-ul">
 <li>We choose an even or odd parity bit</li>
 <li>Even parity: number of 1s is even
@@ -663,38 +679,479 @@ check slides for example
 </div>
 </div>
 
-<div id="outline-container-orgc9c8b85" class="outline-2">
-<h2 id="orgc9c8b85"><span class="todo TODO">TODO</span> Binary Logic and Gates</h2>
-<div class="outline-text-2" id="text-orgc9c8b85">
+<div id="outline-container-org97b6664" class="outline-2">
+<h2 id="org97b6664"><span class="todo TODO">TODO</span> Binary Logic and Gates</h2>
+<div class="outline-text-2" id="text-org97b6664">
 </div>
-<div id="outline-container-orgb059671" class="outline-4">
-<h4 id="orgb059671">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-orgb059671">
+<div id="outline-container-orgbf76136" class="outline-4">
+<h4 id="orgbf76136">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-orgbf76136">
 <ul class="org-ul">
 <li><a href="./res/02-BooleanAlgebra.pdf">click here</a></li>
 </ul>
 </div>
 </div>
+<div id="outline-container-orgcb260df" class="outline-3">
+<h3 id="orgcb260df">Boolean Algebra</h3>
+<div class="outline-text-3" id="text-orgcb260df">
+<p>
+Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; or &rsquo;1&rsquo; corresponding to High(1) or Low(0) voltages.
+</p>
+<ul class="org-ul">
+<li>Digital Circuts take binary signals and produce binary signals</li>
+<li>Binary logic algebra is commonly referred to as binary algebra</li>
+<li>Algebric structure with
+<ul class="org-ul">
+<li>Booleans = {0 , 1}</li>
+<li>Two Binary Operators = {., +}
+<ul class="org-ul">
+<li>the dot <code>.</code> represents <code>AND</code></li>
+<li>the plus sign <code>+</code> represents <code>OR</code></li>
+</ul></li>
+<li>One Unary operator = (written as a Dash above the symbol or as <code>'</code> after the symbol)</li>
+</ul></li>
+<li>Example <code>F = A.B + 1</code></li>
+</ul>
 </div>
-<div id="outline-container-org95138e9" class="outline-2">
-<h2 id="org95138e9"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
-<div class="outline-text-2" id="text-org95138e9">
+<div id="outline-container-org7569d54" class="outline-4">
+<h4 id="org7569d54">Operator precedence</h4>
+<div class="outline-text-4" id="text-org7569d54">
+<ol class="org-ol">
+<li>Parethesis <code>( Expression )</code> {Highest priority}</li>
+<li><code>NOT</code> operator <code>Expr'</code></li>
+<li><code>AND</code> operator <code>Expr1 . Expr2</code></li>
+<li><code>OR</code> operator <code>Expr1 + Expr2</code> {Lowest priority}</li>
+</ol>
+<hr />
 </div>
-<div id="outline-container-org15ee523" class="outline-4">
-<h4 id="org15ee523">Suwaiyan slides</h4>
-<div class="outline-text-4" id="text-org15ee523">
+</div>
+</div>
+<div id="outline-container-org2e6c35b" class="outline-3">
+<h3 id="org2e6c35b">Logic Gates &amp; Operations</h3>
+<div class="outline-text-3" id="text-org2e6c35b">
+<p>
+Gate drawings are from wikimedia (C)
+</p>
+</div>
+<div id="outline-container-orga35e8ed" class="outline-4">
+<h4 id="orga35e8ed"><code>AND</code> Gate</h4>
+<div class="outline-text-4" id="text-orga35e8ed">
+
+<div id="org4e16996" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/AND_ANSI_Labelled.svg" alt="AND_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth table for (AB) or (A*B)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">AB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org8ef81d0" class="outline-4">
+<h4 id="org8ef81d0"><code>OR</code> Gate</h4>
+<div class="outline-text-4" id="text-org8ef81d0">
+
+<div id="orgced7cc2" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/OR_ANSI_Labelled.svg" alt="OR_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (A+B)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">A+B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org2868b74" class="outline-4">
+<h4 id="org2868b74"><code>NOT</code> Gate</h4>
+<div class="outline-text-4" id="text-org2868b74">
+
+<div id="orgd6445c5" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/NOT_ANSI_Labelled.svg" alt="NOT_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (A&rsquo;)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">A&rsquo;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org61c0a10" class="outline-4">
+<h4 id="org61c0a10"><code>NAND</code> Gate</h4>
+<div class="outline-text-4" id="text-org61c0a10">
+
+<div id="orgeaaffe5" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/NAND_ANSI_Labelled.svg" alt="NAND_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (AB)&rsquo;
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">(AB)&rsquo;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orgb2d30b7" class="outline-4">
+<h4 id="orgb2d30b7"><code>NOR</code> Gate</h4>
+<div class="outline-text-4" id="text-orgb2d30b7">
+
+<div id="orgc68e779" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/NOR_ANSI_Labelled.svg" alt="NOR_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (A+B)&rsquo;
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">(A+B)&rsquo;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org4857126" class="outline-4">
+<h4 id="org4857126"><code>XOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org4857126">
+
+<div id="org90f7172" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/XOR_ANSI_Labelled.svg" alt="XOR_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (A XOR B)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">A XOR B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orgde55fd3" class="outline-4">
+<h4 id="orgde55fd3"><code>XNOR</code> Gate</h4>
+<div class="outline-text-4" id="text-orgde55fd3">
+
+<div id="org3f9f7c9" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/XNOR_ANSI_Labelled.svg" alt="XNOR_ANSI_Labelled.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Truth Table for (A XNOR B)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">A XOR B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org42fa913" class="outline-2">
+<h2 id="org42fa913"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
+<div class="outline-text-2" id="text-org42fa913">
+</div>
+<div id="outline-container-orgcd1daf0" class="outline-4">
+<h4 id="orgcd1daf0">Suwaiyan slides</h4>
+<div class="outline-text-4" id="text-orgcd1daf0">
 <ul class="org-ul">
 <li><a href="./res/03-StandardAndCanonicalForms.pdf">click here</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf847e50" class="outline-2">
-<h2 id="orgf847e50"><span class="todo TODO">TODO</span> Other Gate types</h2>
+<div id="outline-container-org527d497" class="outline-2">
+<h2 id="org527d497"><span class="todo TODO">TODO</span> Other Gate types</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Airbus5717</p>
+<p class="date">Created: 2022-09-19 Mon 14:03</p>
 </div>
 </body>
 </html>
