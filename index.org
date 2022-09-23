@@ -2,6 +2,7 @@
 #+OPTIONS: num:nil html-style:nil toc:1
 #+AUTHOR: Airbus5717
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+html_head: <link rel="stylesheet" type="text/css" href="style.css">
 #+LaTeX_HEADER: \usepackage{minted}
 
 -----
@@ -321,3 +322,5 @@ also practice more
 *** Suwaiyan slides
 - [[./res/03-StandardAndCanonicalForms.pdf][click here]]
 * TODO Other Gate types
+*** Suwaiyan slides
+- [[./res/06-Other Gates.pdf][click here]]
