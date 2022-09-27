@@ -320,4 +320,132 @@ also practice more
 #+end_verse
 -----
 * TODO Standard & Canonical Forms
+** Canonical form
+*** Minterms
+Minterm is a =product term= which all literals show up the product in true or compliment form
+
+- ABC is a minterm
+- AB'C' is a minterm
+- AB is not a minterm (missing C)
+
+
+example:
+M2 = A'BC' = because 2 is =010=
+M6 = ABC' = =110=
+
+
+#+begin_quote
+- minterms are boolean functions
+- a minterm will be 1 only once in the Truth Table (TT)
+- (mi) will be 1 at row i of TT and 0 otherwise
+#+end_quote
+example:
+
+| A | B | C | m3 | m5 | m6 |
+|---+---+---+----+----+----|
+| 0 | 0 | 0 |  0 |  0 |  0 |
+| 0 | 0 | 1 |  0 |  0 |  0 |
+| 0 | 1 | 0 |  0 |  0 |  0 |
+| 0 | 1 | 1 |  1 |  0 |  0 |
+| 1 | 0 | 0 |  0 |  0 |  0 |
+| 1 | 0 | 1 |  0 |  1 |  0 |
+| 1 | 1 | 0 |  0 |  0 |  1 |
+| 1 | 1 | 1 |  0 |  0 |  0 |
+
+-----
+*** Sum of minterms
+All boolean functions can be written in sum-of-minterms(SOM) form
+
+- x'y = 01
+- xy' = 10
+
+
+=F(x, y) = m1 + m2 = x'y + xy'=
+
+**** Example: express G(a, b, c) in TT below in SOM canonical form using SIGMA(Σ) notation
+
+| a | b | c | G |
+|---+---+---+---|
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
+
+- G(a, b, c) = Σm(0, 2, 5)
+- G(a, b, c) = a'b'c' + a'bc' + ab'c
+
+*** Maxterms
+Maxterm: Sum term where all literals show up the sum in true or complement form
+
+
+maxterm examples
+- A + B + C'
+- A'+ B' + C'
+- A + C (WARN: NOT A MAXTERM (B is missing))
+
+| A | B | C | F | M1 | M4 | M7 |
+|---+---+---+---+----+----+----|
+| 0 | 0 | 0 | 1 |  1 |  1 |  1 |
+| 0 | 0 | 1 | 0 |  0 |  1 |  1 |
+| 0 | 1 | 0 | 1 |  1 |  1 |  1 |
+| 0 | 1 | 1 | 1 |  1 |  1 |  1 |
+| 1 | 0 | 0 | 0 |  1 |  0 |  1 |
+| 1 | 0 | 1 | 1 |  1 |  1 |  1 |
+| 1 | 1 | 0 | 1 |  1 |  1 |  1 |
+| 1 | 1 | 1 | 0 |  1 |  1 |  0 |
+F(A, B, C) = M1*M4*M7 = πM(1, 4, 7)
+
+#+begin_quote
+Use DeMorgan's law to convert between the two canonical forms
+#+end_quote
+
+**** Example: G(A, B, C) = Σm(1, 3, 4)
+G(A, B, C) = m1 + m3 + m4
+G(A, B, C) = πM(0, 2, 5, 6, 7)
+
+**** Another example: F(A,B,C,D) = πM(0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 13, 14)
+convert to SOM
+F(A,B,C,D) = Σm(7, 19, 15)
+
+**** Example3: express F' in POM and SOM
+F'(A,B,C,D) = πM(7,9,15)
+F'(A,B,C,D) = Σm(0,1,2,3,4,5,6,8,10,11,12,13,14)
+
+-----
+*** Operations on Canonical forms
+**** ANDing two SOMs
+take the intersection of indecies
+**** ORing two SOMs
+take union indecies
+**** ANDing two POMs
+union
+**** ORing two POMs
+intersection
+
+**** Example
+F(A,B,C) = Σm(0, 1, 3, 5)
+G(A,B,C) = πM(1, 2, 3, 4)
+
+- F * G = (Σm(0, 1, 3, 5)) * (πM(1, 2, 3, 4))
+
+  = πM(2,4,6,7) * πM(1,2,3,4)
+
+  = πM(1,2,3,4,6,7)
+
+- F + G = (Σm(0, 1, 3, 5)) + (Σm(1, 2, 3, 4))
+
+  = Σm(0,1,3,5,6,7)
+
+- F + G in POM? = πM(2, 4)
+-----
+
+** Standard form
+a product term is an ANDing of one or more literals
+
+
+
 * TODO Other Gate types

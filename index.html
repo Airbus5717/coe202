@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-09-27 Tue 19:03 -->
+<!-- 2022-09-27 Tue 23:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>COE 202 notes - Airbus5717</title>
@@ -24,11 +24,11 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgce873e6">resources</a></li>
-<li><a href="#org85423ed">Data Representation</a></li>
-<li><a href="#org2217002">Binary Logic and Gates</a></li>
-<li><a href="#org793aa3e"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a></li>
-<li><a href="#orgdf2539f"><span class="todo TODO">TODO</span> Other Gate types</a></li>
+<li><a href="#orgfc2f5f1">resources</a></li>
+<li><a href="#org2f8e7aa">Data Representation</a></li>
+<li><a href="#orgea7336a">Binary Logic and Gates</a></li>
+<li><a href="#orgd745b35"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</a></li>
+<li><a href="#orgb6354db"><span class="todo TODO">TODO</span> Other Gate types</a></li>
 </ul>
 </div>
 </div>
@@ -49,43 +49,43 @@ IMPORTANT NOTICE:
 </blockquote>
 <hr />
 
-<div id="outline-container-orgce873e6" class="outline-2">
-<h2 id="orgce873e6">resources</h2>
-<div class="outline-text-2" id="text-orgce873e6">
+<div id="outline-container-orgfc2f5f1" class="outline-2">
+<h2 id="orgfc2f5f1">resources</h2>
+<div class="outline-text-2" id="text-orgfc2f5f1">
 </div>
-<div id="outline-container-org605c3ec" class="outline-3">
-<h3 id="org605c3ec">GOOGLE DRIVE</h3>
-<div class="outline-text-3" id="text-org605c3ec">
+<div id="outline-container-org3162073" class="outline-3">
+<h3 id="org3162073">GOOGLE DRIVE</h3>
+<div class="outline-text-3" id="text-org3162073">
 <p>
 <a href="https://drive.google.com/drive/folders/1uj0pIcEBduEHoKZDmaap0oEAX33aH5U7?usp=sharing">click here</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc206e9a" class="outline-3">
-<h3 id="orgc206e9a">Videos</h3>
-<div class="outline-text-3" id="text-orgc206e9a">
+<div id="outline-container-org835730d" class="outline-3">
+<h3 id="org835730d">Videos</h3>
+<div class="outline-text-3" id="text-org835730d">
 </div>
-<div id="outline-container-orga4141ae" class="outline-4">
-<h4 id="orga4141ae">Dr. M. Mudawar</h4>
-<div class="outline-text-4" id="text-orga4141ae">
+<div id="outline-container-org48deb57" class="outline-4">
+<h4 id="org48deb57">Dr. M. Mudawar</h4>
+<div class="outline-text-4" id="text-org48deb57">
 <ul class="org-ul">
 <li>YouTube playlist:  <a href="https://www.youtube.com/playlist?list=PLjusC38NfWcP2q64XNIHhEOy4pHZzNY3m">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2786b94" class="outline-4">
-<h4 id="org2786b94">Dr. Aiman El-Maleh</h4>
-<div class="outline-text-4" id="text-org2786b94">
+<div id="outline-container-org561e6fe" class="outline-4">
+<h4 id="org561e6fe">Dr. Aiman El-Maleh</h4>
+<div class="outline-text-4" id="text-org561e6fe">
 <ul class="org-ul">
 <li>Microsoft stream videos: <a href="https://web.microsoftstream.com/user/3bc9969e-64c5-4a29-8579-93820cc76ef6">click here</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8f8f5cf" class="outline-4">
-<h4 id="org8f8f5cf">Dr. Ali Al-Suwaiyan</h4>
-<div class="outline-text-4" id="text-org8f8f5cf">
+<div id="outline-container-org08ab9c4" class="outline-4">
+<h4 id="org08ab9c4">Dr. Ali Al-Suwaiyan</h4>
+<div class="outline-text-4" id="text-org08ab9c4">
 <ul class="org-ul">
 <li>YouTube playlist: <a href="https://www.youtube.com/playlist?list=PLeurb_BIjrxifPpf5Z1B5nSNmwI_GHXFZ">click here</a></li>
 </ul>
@@ -185,13 +185,13 @@ IMPORTANT NOTICE:
 </div>
 </div>
 </div>
-<div id="outline-container-org85423ed" class="outline-2">
-<h2 id="org85423ed">Data Representation</h2>
-<div class="outline-text-2" id="text-org85423ed">
+<div id="outline-container-org2f8e7aa" class="outline-2">
+<h2 id="org2f8e7aa">Data Representation</h2>
+<div class="outline-text-2" id="text-org2f8e7aa">
 </div>
-<div id="outline-container-org25c48d2" class="outline-3">
-<h3 id="org25c48d2">Introduction</h3>
-<div class="outline-text-3" id="text-org25c48d2">
+<div id="outline-container-org79baf20" class="outline-3">
+<h3 id="org79baf20">Introduction</h3>
+<div class="outline-text-3" id="text-org79baf20">
 <ul class="org-ul">
 <li>computers represent data in binary numbers (1 and 0)</li>
 <li>all data must be represented in binary format</li>
@@ -202,9 +202,9 @@ IMPORTANT NOTICE:
 <hr />
 </div>
 </div>
-<div id="outline-container-org214a28d" class="outline-3">
-<h3 id="org214a28d">Numbering Systems</h3>
-<div class="outline-text-3" id="text-org214a28d">
+<div id="outline-container-org1dcd09e" class="outline-3">
+<h3 id="org1dcd09e">Numbering Systems</h3>
+<div class="outline-text-3" id="text-org1dcd09e">
 <ul class="org-ul">
 <li>Numbering systems are characterized by their base number (also called radix or r for short)</li>
 <li>a number with base n will have digits from 0 to (n-1)</li>
@@ -260,9 +260,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-org6972fd7" class="outline-3">
-<h3 id="org6972fd7">Weighted Number Systems</h3>
-<div class="outline-text-3" id="text-org6972fd7">
+<div id="outline-container-org26887d6" class="outline-3">
+<h3 id="org26887d6">Weighted Number Systems</h3>
+<div class="outline-text-3" id="text-org26887d6">
 <ul class="org-ul">
 <li>a number <code>D</code> consists of <code>n</code> digits with each digit having a particular position.</li>
 <li>Every Digit has a fixed weight</li>
@@ -278,9 +278,9 @@ the widely used numbering systems are:
 <hr />
 </div>
 </div>
-<div id="outline-container-orgd49450d" class="outline-3">
-<h3 id="orgd49450d">The Radix (<code>Base</code>)</h3>
-<div class="outline-text-3" id="text-orgd49450d">
+<div id="outline-container-org0293160" class="outline-3">
+<h3 id="org0293160">The Radix (<code>Base</code>)</h3>
+<div class="outline-text-3" id="text-org0293160">
 <p>
 the allowed set of digits are from <code>0</code> to <code>r-1</code>
 for example in base 8: <code>0...7</code>
@@ -290,9 +290,9 @@ for example in base 8: <code>0...7</code>
 </ul>
 <hr />
 </div>
-<div id="outline-container-orgcdb0a55" class="outline-4">
-<h4 id="orgcdb0a55">Digit weight</h4>
-<div class="outline-text-4" id="text-orgcdb0a55">
+<div id="outline-container-org6f673bd" class="outline-4">
+<h4 id="org6f673bd">Digit weight</h4>
+<div class="outline-text-4" id="text-org6f673bd">
 <p>
 example a number in base 8: <code>34556</code>
 </p>
@@ -304,9 +304,9 @@ example a number in base 8: <code>34556</code>
 </div>
 </div>
 </div>
-<div id="outline-container-org131a8ac" class="outline-3">
-<h3 id="org131a8ac">Binary System</h3>
-<div class="outline-text-3" id="text-org131a8ac">
+<div id="outline-container-org5fa3d3f" class="outline-3">
+<h3 id="org5fa3d3f">Binary System</h3>
+<div class="outline-text-3" id="text-org5fa3d3f">
 <ul class="org-ul">
 <li>the r = <code>2</code></li>
 <li>each digit is either 1 or 0</li>
@@ -394,9 +394,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-org185838f" class="outline-3">
-<h3 id="org185838f">Octal System</h3>
-<div class="outline-text-3" id="text-org185838f">
+<div id="outline-container-org5b731ca" class="outline-3">
+<h3 id="org5b731ca">Octal System</h3>
+<div class="outline-text-3" id="text-org5b731ca">
 <ul class="org-ul">
 <li>r = 8</li>
 <li>Octal digits = {0, 1, 2, 3, 4, 5, 6, 7}</li>
@@ -405,9 +405,9 @@ binary number (101)
 </div>
 </div>
 
-<div id="outline-container-org6dd99d3" class="outline-3">
-<h3 id="org6dd99d3">Hexadecimal System</h3>
-<div class="outline-text-3" id="text-org6dd99d3">
+<div id="outline-container-orgf71af73" class="outline-3">
+<h3 id="orgf71af73">Hexadecimal System</h3>
+<div class="outline-text-3" id="text-orgf71af73">
 <ul class="org-ul">
 <li>r = 16</li>
 <li>Digits are 0..9 then A, B, C, D, E, F</li>
@@ -418,9 +418,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-orgeaaf84a" class="outline-3">
-<h3 id="orgeaaf84a">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
-<div class="outline-text-3" id="text-orgeaaf84a">
+<div id="outline-container-orgeb97087" class="outline-3">
+<h3 id="orgeb97087">Integers in (Binary, Octal, Decimal and Hexadecimal)</h3>
+<div class="outline-text-3" id="text-orgeb97087">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -558,9 +558,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 <hr />
 </div>
 </div>
-<div id="outline-container-org49bfe28" class="outline-3">
-<h3 id="org49bfe28">Binary coded decimal</h3>
-<div class="outline-text-3" id="text-org49bfe28">
+<div id="outline-container-orgd605476" class="outline-3">
+<h3 id="orgd605476">Binary coded decimal</h3>
+<div class="outline-text-3" id="text-orgd605476">
 <ul class="org-ul">
 <li>every number is represented as 4 bits</li>
 <li>there are different ways to represent it
@@ -577,9 +577,9 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-orgf5c8556" class="outline-3">
-<h3 id="orgf5c8556">ASCII Chars</h3>
-<div class="outline-text-3" id="text-orgf5c8556">
+<div id="outline-container-orge51237c" class="outline-3">
+<h3 id="orge51237c">ASCII Chars</h3>
+<div class="outline-text-3" id="text-orge51237c">
 <ul class="org-ul">
 <li>each number/char/symbol is represented with a number from 0 to 127</li>
 <li>extended ascii has to 256 numbers</li>
@@ -588,18 +588,18 @@ also <a href="https://www.youtube.com/watch?v=D_YC6DSPpQE">click here for hex 2 
 </div>
 </div>
 
-<div id="outline-container-orgd6da069" class="outline-3">
-<h3 id="orgd6da069">Error detection by parity bit</h3>
-<div class="outline-text-3" id="text-orgd6da069">
+<div id="outline-container-orge294b8f" class="outline-3">
+<h3 id="orge294b8f">Error detection by parity bit</h3>
+<div class="outline-text-3" id="text-orge294b8f">
 <ul class="org-ul">
 <li>Sender tries to send data to reciever which is encodeded in binary</li>
 <li>Data could get corrupted during transmission</li>
 <li>so basically we construct a basic error checker that would help reduce errors (but not always the case)</li>
 </ul>
 </div>
-<div id="outline-container-org838119d" class="outline-4">
-<h4 id="org838119d">Parity Bit</h4>
-<div class="outline-text-4" id="text-org838119d">
+<div id="outline-container-org95eb517" class="outline-4">
+<h4 id="org95eb517">Parity Bit</h4>
+<div class="outline-text-4" id="text-org95eb517">
 <ul class="org-ul">
 <li>We choose an even or odd parity bit</li>
 <li>Even parity: number of 1s is even
@@ -621,13 +621,13 @@ check slides for example
 </div>
 </div>
 
-<div id="outline-container-org2217002" class="outline-2">
-<h2 id="org2217002">Binary Logic and Gates</h2>
-<div class="outline-text-2" id="text-org2217002">
+<div id="outline-container-orgea7336a" class="outline-2">
+<h2 id="orgea7336a">Binary Logic and Gates</h2>
+<div class="outline-text-2" id="text-orgea7336a">
 </div>
-<div id="outline-container-org66dd90a" class="outline-3">
-<h3 id="org66dd90a">Boolean Algebra</h3>
-<div class="outline-text-3" id="text-org66dd90a">
+<div id="outline-container-orgb80be7e" class="outline-3">
+<h3 id="orgb80be7e">Boolean Algebra</h3>
+<div class="outline-text-3" id="text-orgb80be7e">
 <p>
 Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; or &rsquo;1&rsquo; corresponding to High(1) or Low(0) voltages.
 </p>
@@ -647,9 +647,9 @@ Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; 
 <li>Example <code>F = A.B + 1</code></li>
 </ul>
 </div>
-<div id="outline-container-orgfc0f4eb" class="outline-4">
-<h4 id="orgfc0f4eb">Operator precedence</h4>
-<div class="outline-text-4" id="text-orgfc0f4eb">
+<div id="outline-container-orge9e66b0" class="outline-4">
+<h4 id="orge9e66b0">Operator precedence</h4>
+<div class="outline-text-4" id="text-orge9e66b0">
 <ol class="org-ol">
 <li>Parethesis <code>( Expression )</code> {Highest priority}</li>
 <li><code>NOT</code> operator <code>Expr'</code></li>
@@ -660,18 +660,18 @@ Digital circuts use binary Systems, signals can be either logic &rsquo;0&rsquo; 
 </div>
 </div>
 </div>
-<div id="outline-container-org9cf3572" class="outline-3">
-<h3 id="org9cf3572">Logic Gates &amp; Operations</h3>
-<div class="outline-text-3" id="text-org9cf3572">
+<div id="outline-container-org56afee8" class="outline-3">
+<h3 id="org56afee8">Logic Gates &amp; Operations</h3>
+<div class="outline-text-3" id="text-org56afee8">
 <p>
 Gate drawings are from wikimedia (C)
 </p>
 </div>
-<div id="outline-container-org69c6fae" class="outline-4">
-<h4 id="org69c6fae"><code>AND</code> Gate</h4>
-<div class="outline-text-4" id="text-org69c6fae">
+<div id="outline-container-orge7ad834" class="outline-4">
+<h4 id="orge7ad834"><code>AND</code> Gate</h4>
+<div class="outline-text-4" id="text-orge7ad834">
 
-<div id="org4c9ecd4" class="figure">
+<div id="org79762f4" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/AND_ANSI_Labelled.svg" alt="AND_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -726,11 +726,11 @@ Truth table for (AB) or (A*B)
 </div>
 </div>
 
-<div id="outline-container-org94f1e75" class="outline-4">
-<h4 id="org94f1e75"><code>OR</code> Gate</h4>
-<div class="outline-text-4" id="text-org94f1e75">
+<div id="outline-container-org9654fc5" class="outline-4">
+<h4 id="org9654fc5"><code>OR</code> Gate</h4>
+<div class="outline-text-4" id="text-org9654fc5">
 
-<div id="orgbf7bc69" class="figure">
+<div id="org3421b82" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/OR_ANSI_Labelled.svg" alt="OR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -785,11 +785,11 @@ Truth Table for (A+B)
 </div>
 </div>
 
-<div id="outline-container-orgd2ed705" class="outline-4">
-<h4 id="orgd2ed705"><code>NOT</code> Gate</h4>
-<div class="outline-text-4" id="text-orgd2ed705">
+<div id="outline-container-org6cdd8c5" class="outline-4">
+<h4 id="org6cdd8c5"><code>NOT</code> Gate</h4>
+<div class="outline-text-4" id="text-org6cdd8c5">
 
-<div id="orgbe17942" class="figure">
+<div id="orgdf60d8f" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/NOT_ANSI_Labelled.svg" alt="NOT_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -827,11 +827,11 @@ Truth Table for (A&rsquo;)
 </div>
 </div>
 
-<div id="outline-container-org24777b2" class="outline-4">
-<h4 id="org24777b2"><code>NAND</code> Gate</h4>
-<div class="outline-text-4" id="text-org24777b2">
+<div id="outline-container-org90f9994" class="outline-4">
+<h4 id="org90f9994"><code>NAND</code> Gate</h4>
+<div class="outline-text-4" id="text-org90f9994">
 
-<div id="org05d53f3" class="figure">
+<div id="orgfe52b78" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/NAND_ANSI_Labelled.svg" alt="NAND_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -886,11 +886,11 @@ Truth Table for (AB)&rsquo;
 </div>
 </div>
 
-<div id="outline-container-org0940e9a" class="outline-4">
-<h4 id="org0940e9a"><code>NOR</code> Gate</h4>
-<div class="outline-text-4" id="text-org0940e9a">
+<div id="outline-container-org2583eed" class="outline-4">
+<h4 id="org2583eed"><code>NOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org2583eed">
 
-<div id="org4b32162" class="figure">
+<div id="org4bdba88" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/NOR_ANSI_Labelled.svg" alt="NOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -945,11 +945,11 @@ Truth Table for (A+B)&rsquo;
 </div>
 </div>
 
-<div id="outline-container-org4ad965d" class="outline-4">
-<h4 id="org4ad965d"><code>XOR</code> Gate</h4>
-<div class="outline-text-4" id="text-org4ad965d">
+<div id="outline-container-org03590c8" class="outline-4">
+<h4 id="org03590c8"><code>XOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org03590c8">
 
-<div id="org1ae8ee5" class="figure">
+<div id="orga0a3992" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/XOR_ANSI_Labelled.svg" alt="XOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -1004,11 +1004,11 @@ Truth Table for (A XOR B)
 </div>
 </div>
 
-<div id="outline-container-org7f5bada" class="outline-4">
-<h4 id="org7f5bada"><code>XNOR</code> Gate</h4>
-<div class="outline-text-4" id="text-org7f5bada">
+<div id="outline-container-org0097b5a" class="outline-4">
+<h4 id="org0097b5a"><code>XNOR</code> Gate</h4>
+<div class="outline-text-4" id="text-org0097b5a">
 
-<div id="org4dc346e" class="figure">
+<div id="org8d00f28" class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/XNOR_ANSI_Labelled.svg" alt="XNOR_ANSI_Labelled.svg" class="org-svg" />
 </p>
 </div>
@@ -1068,9 +1068,9 @@ NOTE: solve a few problems on slides and etc.<br />
 </div>
 </div>
 
-<div id="outline-container-orgf88949c" class="outline-3">
-<h3 id="orgf88949c">Basic Identities and Duality principle</h3>
-<div class="outline-text-3" id="text-orgf88949c">
+<div id="outline-container-org0f8dce5" class="outline-3">
+<h3 id="org0f8dce5">Basic Identities and Duality principle</h3>
+<div class="outline-text-3" id="text-org0f8dce5">
 <p>
 Identities Table
 </p>
@@ -1168,9 +1168,9 @@ Identities Table
 </table>
 </div>
 
-<div id="outline-container-org4f12909" class="outline-4">
-<h4 id="org4f12909">to get a dual</h4>
-<div class="outline-text-4" id="text-org4f12909">
+<div id="outline-container-orgc389211" class="outline-4">
+<h4 id="orgc389211">to get a dual</h4>
+<div class="outline-text-4" id="text-orgc389211">
 <ul class="org-ul">
 <li>Change every <code>AND</code> to <code>OR</code> (. to +)</li>
 <li>Change every <code>OR</code> to <code>AND</code> (+ to .)</li>
@@ -1188,9 +1188,9 @@ Dual can be used to simplify a function but must be dualed back and the simplifi
 </div>
 </div>
 </div>
-<div id="outline-container-orgb3e75f7" class="outline-3">
-<h3 id="orgb3e75f7">Algerbraic Manipulations</h3>
-<div class="outline-text-3" id="text-orgb3e75f7">
+<div id="outline-container-org88fa95f" class="outline-3">
+<h3 id="org88fa95f">Algerbraic Manipulations</h3>
+<div class="outline-text-3" id="text-org88fa95f">
 <p class="verse">
 Solve problems in Suwaiyan slides from [BooleanAlgebra slides]<br />
 from page 11 to 16<br />
@@ -1201,16 +1201,519 @@ also practice more<br />
 </div>
 </div>
 </div>
-<div id="outline-container-org793aa3e" class="outline-2">
-<h2 id="org793aa3e"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
+<div id="outline-container-orgd745b35" class="outline-2">
+<h2 id="orgd745b35"><span class="todo TODO">TODO</span> Standard &amp; Canonical Forms</h2>
+<div class="outline-text-2" id="text-orgd745b35">
 </div>
-<div id="outline-container-orgdf2539f" class="outline-2">
-<h2 id="orgdf2539f"><span class="todo TODO">TODO</span> Other Gate types</h2>
+<div id="outline-container-org51d9dcc" class="outline-3">
+<h3 id="org51d9dcc">Canonical form</h3>
+<div class="outline-text-3" id="text-org51d9dcc">
+</div>
+<div id="outline-container-org6cb3d94" class="outline-4">
+<h4 id="org6cb3d94">Minterms</h4>
+<div class="outline-text-4" id="text-org6cb3d94">
+<p>
+Minterm is a <code>product term</code> which all literals show up the product in true or compliment form
+</p>
+
+<ul class="org-ul">
+<li>ABC is a minterm</li>
+<li>AB&rsquo;C&rsquo; is a minterm</li>
+<li>AB is not a minterm (missing C)</li>
+</ul>
+
+
+<p>
+example:
+M2 = A&rsquo;BC&rsquo; = because 2 is <code>010</code>
+M6 = ABC&rsquo; = <code>110</code>
+</p>
+
+
+<blockquote>
+<ul class="org-ul">
+<li>minterms are boolean functions</li>
+<li>a minterm will be 1 only once in the Truth Table (TT)</li>
+<li>(mi) will be 1 at row i of TT and 0 otherwise</li>
+</ul>
+</blockquote>
+<p>
+example:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+<th scope="col" class="org-right">m3</th>
+<th scope="col" class="org-right">m5</th>
+<th scope="col" class="org-right">m6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+</div>
+</div>
+<div id="outline-container-org24384d8" class="outline-4">
+<h4 id="org24384d8">Sum of minterms</h4>
+<div class="outline-text-4" id="text-org24384d8">
+<p>
+All boolean functions can be written in sum-of-minterms(SOM) form
+</p>
+
+<ul class="org-ul">
+<li>x&rsquo;y = 01</li>
+<li>xy&rsquo; = 10</li>
+</ul>
+
+
+<p>
+<code>F(x, y) = m1 + m2 = x'y + xy'</code>
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org795cc6d"></a>Example: express G(a, b, c) in TT below in SOM canonical form using SIGMA(Σ) notation<br />
+<div class="outline-text-5" id="text-org795cc6d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">a</th>
+<th scope="col" class="org-right">b</th>
+<th scope="col" class="org-right">c</th>
+<th scope="col" class="org-right">G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>G(a, b, c) = Σm(0, 2, 5)</li>
+<li>G(a, b, c) = a&rsquo;b&rsquo;c&rsquo; + a&rsquo;bc&rsquo; + ab&rsquo;c</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orga459336" class="outline-4">
+<h4 id="orga459336">Maxterms</h4>
+<div class="outline-text-4" id="text-orga459336">
+<p>
+Maxterm: Sum term where all literals show up the sum in true or complement form
+</p>
+
+
+<p>
+maxterm examples
+</p>
+<ul class="org-ul">
+<li>A + B + C&rsquo;</li>
+<li>A&rsquo;+ B&rsquo; + C&rsquo;</li>
+<li>A + C (WARN: NOT A MAXTERM (B is missing))</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+<th scope="col" class="org-right">F</th>
+<th scope="col" class="org-right">M1</th>
+<th scope="col" class="org-right">M4</th>
+<th scope="col" class="org-right">M7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+<p>
+F(A, B, C) = M1*M4*M7 = πM(1, 4, 7)
+</p>
+
+<blockquote>
+<p>
+Use DeMorgan&rsquo;s law to convert between the two canonical forms
+</p>
+</blockquote>
+</div>
+
+<ul class="org-ul">
+<li><a id="org39ec6bb"></a>Example: G(A, B, C) = Σm(1, 3, 4)<br />
+<div class="outline-text-5" id="text-org39ec6bb">
+<p>
+G(A, B, C) = m1 + m3 + m4
+G(A, B, C) = πM(0, 2, 5, 6, 7)
+</p>
+</div>
+</li>
+
+<li><a id="org5395e2a"></a>Another example: F(A,B,C,D) = πM(0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 13, 14)<br />
+<div class="outline-text-5" id="text-org5395e2a">
+<p>
+convert to SOM
+F(A,B,C,D) = Σm(7, 19, 15)
+</p>
+</div>
+</li>
+
+<li><a id="orge67fcee"></a>Example3: express F&rsquo; in POM and SOM<br />
+<div class="outline-text-5" id="text-orge67fcee">
+<p>
+F&rsquo;(A,B,C,D) = πM(7,9,15)
+F&rsquo;(A,B,C,D) = Σm(0,1,2,3,4,5,6,8,10,11,12,13,14)
+</p>
+
+<hr />
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org3971271" class="outline-4">
+<h4 id="org3971271">Operations on Canonical forms</h4>
+<div class="outline-text-4" id="text-org3971271">
+</div>
+<ul class="org-ul">
+<li><a id="orgb88a832"></a>ANDing two SOMs<br />
+<div class="outline-text-5" id="text-orgb88a832">
+<p>
+take the intersection of indecies
+</p>
+</div>
+</li>
+<li><a id="org2eb2950"></a>ORing two SOMs<br />
+<div class="outline-text-5" id="text-org2eb2950">
+<p>
+take union indecies
+</p>
+</div>
+</li>
+<li><a id="org145913d"></a>ANDing two POMs<br />
+<div class="outline-text-5" id="text-org145913d">
+<p>
+union
+</p>
+</div>
+</li>
+<li><a id="orgfa3f48f"></a>ORing two POMs<br />
+<div class="outline-text-5" id="text-orgfa3f48f">
+<p>
+intersection
+</p>
+</div>
+</li>
+
+<li><a id="org5813d11"></a>Example<br />
+<div class="outline-text-5" id="text-org5813d11">
+<p>
+F(A,B,C) = Σm(0, 1, 3, 5)
+G(A,B,C) = πM(1, 2, 3, 4)
+</p>
+
+<ul class="org-ul">
+<li><p>
+F * G = (Σm(0, 1, 3, 5)) * (πM(1, 2, 3, 4))
+</p>
+
+<p>
+= πM(2,4,6,7) * πM(1,2,3,4)
+</p>
+
+<p>
+= πM(1,2,3,4,6,7)
+</p></li>
+
+<li><p>
+F + G = (Σm(0, 1, 3, 5)) + (Σm(1, 2, 3, 4))
+</p>
+
+<p>
+= Σm(0,1,3,5,6,7)
+</p></li>
+
+<li>F + G in POM? = πM(2, 4)</li>
+</ul>
+<hr />
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org878b107" class="outline-3">
+<h3 id="org878b107">Standard form</h3>
+<div class="outline-text-3" id="text-org878b107">
+<p>
+a product term is an ANDing of one or more literals
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb6354db" class="outline-2">
+<h2 id="orgb6354db"><span class="todo TODO">TODO</span> Other Gate types</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Airbus5717</p>
-<p class="date">Created: 2022-09-27 Tue 19:03</p>
+<p class="date">Created: 2022-09-27 Tue 23:31</p>
 </div>
 </body>
 </html>
