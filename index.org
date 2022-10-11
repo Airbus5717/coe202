@@ -449,3 +449,39 @@ a product term is an ANDing of one or more literals
 
 
 * TODO Other Gate types
+* TODO Verilog (1/3)
+
+#+begin_src verilog
+// an example file with test benchmark
+module fun1(output f1, input a, b, c);
+ and(m0, ~a, ~b, ~c);
+ and(m3, ~a, b ,c);
+ and(m6, a, b , ~c);
+ and(m7, a, b, c);
+ or(f1, m0, m3, m6, m7);
+endmodule
+module fun2(output f2, input a, b, c);
+ assign M1 = a | b | ~c;
+ assign M2 = a | ~b | c;
+ assign M4 = ~a | b | c;
+ assign M5 = ~a | b | ~c;
+ assign f2 = M1 & M2 & M4 & M5;
+endmodule
+
+module tb;
+ reg a, b, c;
+ wire f1, f2, EQ;
+ fun1 fun10(f1, a, b, c);
+ fun2 fun20(f2, a, b, c);
+ xnor(EQ, f1, f2);
+ integer t;
+ initial begin
+$dumpfile("dump.vcd"); $dumpvars;
+  for (t=0; t<8; t=t+1) begin
+   #1 {a, b, c} = t[2:0];
+  end
+  $finish();
+ end
+endmodule
+
+#+end_src
